@@ -19,7 +19,8 @@ body {
 
 .home {
   background-color: #F6F6F6;
-  padding: 2rem;
+  font-size: .8em;
+  padding: 2em;
   height: 100vh; }
 
 .home__heading {
@@ -34,7 +35,7 @@ body {
     align-items: center; }
   .home__heading__name {
     font-family: vivaldi, serif;
-    font-size: 14rem;
+    font-size: 14em;
     text-align: center; }
 
 .home__nav {
@@ -51,21 +52,21 @@ body {
   display: flex;
   align-self: flex-start; }
   .toggle--dark {
-    width: 4rem;
-    height: 4rem;
+    width: 4em;
+    height: 4em;
     border-radius: 50%;
     box-sizing: none;
-    margin: 1rem 1.5rem 1rem 0;
-    border: 7px solid #C7C7C7;
+    margin: 1em 1.5em 1em 0;
+    border: 6px solid #C7C7C7;
     background-color: #111;
     cursor: pointer; }
   .toggle--light {
-    width: 4rem;
-    height: 4rem;
+    width: 4em;
+    height: 4em;
     border-radius: 50%;
     box-sizing: none;
-    margin: 1rem 3.5rem 1rem 0;
-    border: 7px solid #C7C7C7;
+    margin: 1em 3.5em 1em 0;
+    border: 6px solid #C7C7C7;
     background-color: #fff;
     cursor: pointer; }
 
@@ -82,7 +83,7 @@ body {
   color: #646464; }
   .learn-more__text {
     margin-bottom: 6px;
-    font-size: 1.5rem; }
+    font-size: 1.5em; }
 
 .know-more {
   display: none; }
@@ -94,14 +95,14 @@ body {
   padding-left: 10rem; }
 
 .p-left-l {
-  padding-left: 16rem; }
+  padding-left: 15rem; }
 
 .m-b-m {
   margin-bottom: 4rem; }
 
 .heading-1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 10rem;
+  font-size: 10em;
   text-transform: uppercase;
   text-shadow: -14px -14px 23px rgba(255, 255, 255, 0.24), 14px 14px 23px rgba(0, 0, 0, 0.24); }
   .heading-1--light {
@@ -109,7 +110,7 @@ body {
 
 .heading-3 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.1rem;
+  font-size: 2.1em;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -131,15 +132,15 @@ body {
     background-color: #F6F6F6; }
 
 .line-l {
-  width: 6rem;
+  width: 6em;
   height: 4px;
-  margin: 1rem 2rem 5rem 2rem;
+  margin: 1em 2em 5em 2em;
   background-color: #000411; }
 
 .line-s {
-  width: 4rem;
+  width: 4em;
   height: 3.6px;
-  margin: 1rem 2rem 5rem 2rem;
+  margin: 1em 2em 5em 2em;
   background-color: #000411; }
 
 .tooltip {
@@ -149,9 +150,9 @@ body {
 
 .tooltip .tooltiptext {
   font-family: 'Gilroy-Regular', sans-serif;
-  font-size: 2rem;
+  font-size: 2em;
   visibility: hidden;
-  width: 12rem;
+  width: 12em;
   background-color: transparent;
   color: #111;
   text-align: center;
@@ -160,14 +161,14 @@ body {
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  top: -1.2rem;
+  top: -1.2em;
   right: 105%; }
 
 .tooltip .tooltiptext--bottom {
   font-family: 'Gilroy-Regular', sans-serif;
-  font-size: 2rem;
+  font-size: 2em;
   visibility: hidden;
-  width: 12rem;
+  width: 12em;
   background-color: transparent;
   color: #111;
   text-align: center;

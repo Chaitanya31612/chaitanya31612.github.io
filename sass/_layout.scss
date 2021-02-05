@@ -4,7 +4,8 @@
 
 .home {
     background-color: $bg-color-grey;
-    padding: 2rem;
+    font-size: .8em;
+    padding: 2em;
     height: 100vh;
 }
 
@@ -24,9 +25,9 @@
 
     &__name {
         font-family: vivaldi, serif;
-        font-size: 14rem;
+        font-size: 14em;
         text-align: center;
-        // padding: 1rem;
+        // padding: 1em;
     }
 
 }
@@ -49,23 +50,23 @@
     align-self: flex-start;
     
     &--dark {
-        width: 4rem;
-        height: 4rem;
+        width: 4em;
+        height: 4em;
         border-radius: 50%;
         box-sizing: none;
-        margin: 1rem 1.5rem 1rem 0;
-        border: 7px solid $color-grey-light;
+        margin: 1em 1.5em 1em 0;
+        border: 6px solid $color-grey-light;
         background-color: $color-black;
         cursor: pointer;
     }
 
     &--light {
-        width: 4rem;
-        height: 4rem;
+        width: 4em;
+        height: 4em;
         border-radius: 50%;
         box-sizing: none;
-        margin: 1rem 3.5rem 1rem 0;
-        border: 7px solid $color-grey-light;
+        margin: 1em 3.5em 1em 0;
+        border: 6px solid $color-grey-light;
         background-color: $color-white;
         cursor: pointer;
     }
@@ -85,7 +86,7 @@
     color: $color-grey;
     &__text {
         margin-bottom: 6px;
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 }
 
