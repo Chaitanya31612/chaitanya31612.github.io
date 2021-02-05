@@ -4,4 +4,59 @@
 
 .home {
     background-color: $bg-color-grey;
+    padding: 2rem;
+    
+}
+
+.home__heading {
+    display: grid;
+    grid-template-columns: 5fr 2fr 1fr;
+    justify-content: space-evenly;
+
+    &__main {
+        // line-height: 7;
+        display: flex;
+        flex-direction: column;
+        padding-right: 20rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__name {
+        font-family: vivaldi, serif;
+        font-size: 14rem;
+        text-align: center;
+        // padding: 1rem;
+    }
+
+}
+
+.home__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.home__top {
+    display: flex;
+}
+
+.toggle {
+    display: flex;
+
+    &--dark {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        border: 2px solid $color-grey-light;
+        background-color: $color-black;
+    }
+
+    &--light {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: $color-white;
+    }
 }
