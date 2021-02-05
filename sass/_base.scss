@@ -1,0 +1,43 @@
+// font
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+@import url('http://fonts.cdnfonts.com/css/vivaldi');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+                
+
+// Color variables
+$color-white: #fff;
+$color-black: #111;
+$color-grey: #646464;
+$color-grey-light: #C7C7C7;
+$color-primary: #000411;
+$bg-color-grey: #F6F6F6;
+
+
+
+
+
+
+// base
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+

@@ -1,0 +1,29 @@
+@import url("http://fonts.cdnfonts.com/css/gilroy-bold");
+@import url("http://fonts.cdnfonts.com/css/vivaldi");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Gilroy-Regular', sans-serif; }
+
+.home {
+  background-color: #F6F6F6; }
+
+.heading-1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10rem;
+  text-transform: uppercase;
+  text-shadow: -14px -14px 23px rgba(255, 255, 255, 0.24) 14px 14px 23px rgba(0, 0, 0, 0.24); }
+  .heading-1--light {
+    color: #fff; }

@@ -1,0 +1,42 @@
+<svg id="Component_7_1" data-name="Component 7 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="444" height="442" viewBox="0 0 444 442">
+  <defs>
+    <filter id="Shadow" x="112.5" y="117.5" width="249" height="238" filterUnits="userSpaceOnUse">
+      <feOffset dx="15" dy="15" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur"/>
+      <feFlood flood-color="#a5b5f8" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Light" x="82.5" y="87.5" width="249" height="238" filterUnits="userSpaceOnUse">
+      <feOffset dx="-15" dy="-15" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur-2"/>
+      <feFlood flood-color="#fff"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="base" width="444" height="442" rx="198" fill="#e6e6e6"/>
+    </clipPath>
+  </defs>
+  <g id="up" transform="translate(135 140)">
+    <g transform="matrix(1, 0, 0, 1, -135, -140)" filter="url(#Shadow)">
+      <rect id="Shadow-2" data-name="Shadow" width="174" height="163" rx="81.5" transform="translate(135 140)" fill="#f6f6f6"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -135, -140)" filter="url(#Light)">
+      <rect id="Light-2" data-name="Light" width="174" height="163" rx="81.5" transform="translate(135 140)" fill="#f6f6f6"/>
+    </g>
+    <rect id="Base-2" data-name="Base" width="174" height="163" rx="81.5" fill="#f6f6f6"/>
+  </g>
+  <g id="down">
+    <g id="down-2" data-name="down" clip-path="url(#clip-path)">
+      <g id="Shadow-3" data-name="Shadow" fill="none" stroke="rgba(165,181,248,0.99)" stroke-width="5">
+        <rect width="469" height="545" rx="198" stroke="none"/>
+        <rect x="2.5" y="2.5" width="464" height="540" rx="195.5" fill="none"/>
+      </g>
+      <g id="Light-3" data-name="Light" transform="translate(-34 -111)" fill="none" stroke="#fffcfc" stroke-width="5">
+        <rect width="478" height="553" rx="198" stroke="none"/>
+        <rect x="2.5" y="2.5" width="473" height="548" rx="195.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

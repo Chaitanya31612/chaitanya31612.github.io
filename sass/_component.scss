@@ -1,0 +1,15 @@
+.heading-1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10rem;
+    text-transform: uppercase;
+    text-shadow: 
+        -14px  -14px 23px rgba($color-white, 0.24)
+        14px  14px 23px rgba(0,0,0, 0.24);
+
+
+
+    &--light {
+        color: $color-white;
+
+    }
+}
