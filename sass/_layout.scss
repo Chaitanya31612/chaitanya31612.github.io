@@ -5,7 +5,7 @@
 .home {
     background-color: $bg-color-grey;
     padding: 2rem;
-    
+    height: 100vh;
 }
 
 .home__heading {
@@ -40,23 +40,55 @@
 
 .home__top {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .toggle {
     display: flex;
-
+    align-self: flex-start;
+    
     &--dark {
-        width: 2rem;
-        height: 2rem;
+        width: 4rem;
+        height: 4rem;
         border-radius: 50%;
-        border: 2px solid $color-grey-light;
+        box-sizing: none;
+        margin: 1rem 1.5rem 1rem 0;
+        border: 7px solid $color-grey-light;
         background-color: $color-black;
+        cursor: pointer;
     }
 
     &--light {
-        width: 2rem;
-        height: 2rem;
+        width: 4rem;
+        height: 4rem;
         border-radius: 50%;
+        box-sizing: none;
+        margin: 1rem 3.5rem 1rem 0;
+        border: 7px solid $color-grey-light;
         background-color: $color-white;
+        cursor: pointer;
     }
+}
+
+.learn-more {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    text-decoration: none;
+    color: $color-grey;
+    &__text {
+        margin-bottom: 6px;
+        font-size: 1.5rem;
+    }
+}
+
+.know-more {
+    display: none;
 }
