@@ -10,6 +10,11 @@
         color: $color-white;
 
     }
+
+    @include respond(phone) {
+        
+    }
+
 }
 
 .heading-3 {
@@ -71,55 +76,20 @@
 .tooltip .tooltiptext {
     font-family: 'Gilroy-Regular', sans-serif;
     font-size: 2em;
+    font-weight: 800;
     visibility: hidden;
-    width: 12em;
+    width: 10rem;
     background-color: transparent;
     color: $color-black;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 1.1rem 0;
     
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
     top: -1.2em;
     right: 105%;
-}
-
-// .tooltiptext {
-//     &--left {
-//         position: absolute;
-//         z-index: 1;
-//         top: -1.2rem;
-//         right: 105%;
-//     }
-
-//     &--bottom {
-//         position: absolute;
-//         z-index: 1;
-//         top: 100%;
-//         left: 50%;
-//         margin-left: -60px;
-//     }
-// }
-
-.tooltip .tooltiptext--bottom {
-    font-family: 'Gilroy-Regular', sans-serif;
-    font-size: 2em;
-    visibility: hidden;
-    width: 12em;
-    background-color: transparent;
-    color: $color-black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-  
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 50%;
-  margin-left: -60px;
 }
 
 .tooltip:hover .tooltiptext {

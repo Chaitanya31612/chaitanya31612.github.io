@@ -7,12 +7,31 @@
     font-size: .8em;
     padding: 2em;
     height: 100vh;
+
+    @include respond(tab-land) {
+        font-size: .6em;
+    }
+    @include respond(tab-port) {
+        font-size: .5.5em;
+    }
+    @include respond(phone) {
+        
+    }
 }
 
 .home__heading {
     display: grid;
     grid-template-columns: 5fr 2fr 1fr;
     justify-content: space-evenly;
+
+    @include respond(tab-port-2) {
+        grid-template-columns: 5fr 2fr;
+        justify-content: space-around;
+    }
+    @include respond(phone) {
+        grid-template-columns: 1fr;
+        justify-content: space-around;
+    }
 
     &__main {
         // line-height: 7;
@@ -21,6 +40,10 @@
         padding-right: 20rem;
         justify-content: center;
         align-items: center;
+
+        @include respond(tab-port-2) {
+            padding-right: 0;
+        }
     }
 
     &__name {
@@ -30,6 +53,20 @@
         // padding: 1em;
     }
 
+    &__svg {
+
+        @include respond(tab-land) {
+            width: 30rem;
+            height: 30rem;
+        }
+        @include respond(tab-port) {
+            width: 25rem;
+            height: 25rem;
+        }
+        @include respond(tab-port-2) {
+            display: none;
+        }
+    }
 }
 
 .home__nav {
@@ -37,17 +74,30 @@
     flex-direction: column;
     align-items: flex-end;
     
+    @include respond(phone) {
+        display: none;
+    }
 }
 
 .home__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    & > h1:first-child {
+        @include respond(phone) {
+            padding-left: 30%;
+            font-size: 8em;
+        }
+    }
 }
 
 .toggle {
     display: flex;
     align-self: flex-start;
+    @include respond(phone) {
+        flex-direction: column;
+    }
     
     &--dark {
         width: 4em;
@@ -55,9 +105,21 @@
         border-radius: 50%;
         box-sizing: none;
         margin: 1em 1.5em 1em 0;
-        border: 6px solid $color-grey-light;
+        border: .6rem solid $color-grey-light;
         background-color: $color-black;
         cursor: pointer;
+
+        @include respond(tab-land) {
+            margin: 1em 2.5em 1em 0;
+            border: .4.1rem solid $color-grey-light;
+        }
+        @include respond(tab-port) {
+            margin: 1em 2.5em 1em 0;
+            border: .4.1rem solid $color-grey-light;
+        }
+        @include respond(phone) {
+
+        }
     }
 
     &--light {
@@ -66,9 +128,21 @@
         border-radius: 50%;
         box-sizing: none;
         margin: 1em 3.5em 1em 0;
-        border: 6px solid $color-grey-light;
+        border: .6rem solid $color-grey-light;
         background-color: $color-white;
         cursor: pointer;
+
+        @include respond(tab-land) {
+            margin: 1em 2.5em 1em 0;
+            border: .4.1rem solid $color-grey-light;
+        }
+        @include respond(tab-port) {
+            margin: 1em 2.5em 1em 0;
+            border: .4.1rem solid $color-grey-light;
+        }
+        @include respond(phone) {
+            
+        }
     }
 }
 
@@ -86,10 +160,24 @@
     color: $color-grey;
     &__text {
         margin-bottom: 6px;
-        font-size: 1.5em;
+        font-size: 1.7em;
+    }
+
+    &__svg {
+        width: 2.5rem;
+        height: 1.7rem;
+        @include respond(tab-land) {
+            width: 2rem;
+            height: 1rem;
+        }
+        @include respond(tab-port) {
+            width: 1.5rem;
+            height: 1rem;
+        }
     }
 }
 
 .know-more {
     display: none;
 }
+

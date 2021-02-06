@@ -1,6 +1,18 @@
 @import url("http://fonts.cdnfonts.com/css/gilroy-bold");
 @import url("http://fonts.cdnfonts.com/css/vivaldi");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+.p-left-s {
+  padding-left: 5rem; }
+
+.p-left-m {
+  padding-left: 10rem; }
+
+.p-left-l {
+  padding-left: 15rem; }
+
+.m-b-m {
+  margin-bottom: 4rem; }
+
 *,
 *::before,
 *::after {
@@ -11,6 +23,15 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.7em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   -moz-osx-font-smoothing: grayscale;
@@ -22,53 +43,107 @@ body {
   font-size: .8em;
   padding: 2em;
   height: 100vh; }
+  @media only screen and (max-width: 68.7em) {
+    .home {
+      font-size: .6em; } }
+  @media only screen and (max-width: 56.25em) {
+    .home {
+      font-size: 0.5 0.5em; } }
 
 .home__heading {
   display: grid;
   grid-template-columns: 5fr 2fr 1fr;
   justify-content: space-evenly; }
+  @media only screen and (max-width: 46.8em) {
+    .home__heading {
+      grid-template-columns: 5fr 2fr;
+      justify-content: space-around; } }
+  @media only screen and (max-width: 37.5em) {
+    .home__heading {
+      grid-template-columns: 1fr;
+      justify-content: space-around; } }
   .home__heading__main {
     display: flex;
     flex-direction: column;
     padding-right: 20rem;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 46.8em) {
+      .home__heading__main {
+        padding-right: 0; } }
   .home__heading__name {
     font-family: vivaldi, serif;
     font-size: 14em;
     text-align: center; }
+  @media only screen and (max-width: 68.7em) {
+    .home__heading__svg {
+      width: 30rem;
+      height: 30rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .home__heading__svg {
+      width: 25rem;
+      height: 25rem; } }
+  @media only screen and (max-width: 46.8em) {
+    .home__heading__svg {
+      display: none; } }
 
 .home__nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end; }
+  @media only screen and (max-width: 37.5em) {
+    .home__nav {
+      display: none; } }
 
 .home__top {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .home__top > h1:first-child {
+      padding-left: 30%;
+      font-size: 8em; } }
 
 .toggle {
   display: flex;
   align-self: flex-start; }
+  @media only screen and (max-width: 37.5em) {
+    .toggle {
+      flex-direction: column; } }
   .toggle--dark {
     width: 4em;
     height: 4em;
     border-radius: 50%;
     box-sizing: none;
     margin: 1em 1.5em 1em 0;
-    border: 6px solid #C7C7C7;
+    border: 0.6rem solid #C7C7C7;
     background-color: #111;
     cursor: pointer; }
+    @media only screen and (max-width: 68.7em) {
+      .toggle--dark {
+        margin: 1em 2.5em 1em 0;
+        border: 0.4 0.1rem solid #C7C7C7; } }
+    @media only screen and (max-width: 56.25em) {
+      .toggle--dark {
+        margin: 1em 2.5em 1em 0;
+        border: 0.4 0.1rem solid #C7C7C7; } }
   .toggle--light {
     width: 4em;
     height: 4em;
     border-radius: 50%;
     box-sizing: none;
     margin: 1em 3.5em 1em 0;
-    border: 6px solid #C7C7C7;
+    border: 0.6rem solid #C7C7C7;
     background-color: #fff;
     cursor: pointer; }
+    @media only screen and (max-width: 68.7em) {
+      .toggle--light {
+        margin: 1em 2.5em 1em 0;
+        border: 0.4 0.1rem solid #C7C7C7; } }
+    @media only screen and (max-width: 56.25em) {
+      .toggle--light {
+        margin: 1em 2.5em 1em 0;
+        border: 0.4 0.1rem solid #C7C7C7; } }
 
 .learn-more {
   position: absolute;
@@ -83,22 +158,21 @@ body {
   color: #646464; }
   .learn-more__text {
     margin-bottom: 6px;
-    font-size: 1.5em; }
+    font-size: 1.7em; }
+  .learn-more__svg {
+    width: 2.5rem;
+    height: 1.7rem; }
+    @media only screen and (max-width: 68.7em) {
+      .learn-more__svg {
+        width: 2rem;
+        height: 1rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .learn-more__svg {
+        width: 1.5rem;
+        height: 1rem; } }
 
 .know-more {
   display: none; }
-
-.p-left-s {
-  padding-left: 5rem; }
-
-.p-left-m {
-  padding-left: 10rem; }
-
-.p-left-l {
-  padding-left: 15rem; }
-
-.m-b-m {
-  margin-bottom: 4rem; }
 
 .heading-1 {
   font-family: 'Poppins', sans-serif;
@@ -151,35 +225,19 @@ body {
 .tooltip .tooltiptext {
   font-family: 'Gilroy-Regular', sans-serif;
   font-size: 2em;
+  font-weight: 800;
   visibility: hidden;
-  width: 12em;
+  width: 10rem;
   background-color: transparent;
   color: #111;
   text-align: center;
   border-radius: 6px;
-  padding: 5px 0;
+  padding: 1.1rem 0;
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
   top: -1.2em;
   right: 105%; }
-
-.tooltip .tooltiptext--bottom {
-  font-family: 'Gilroy-Regular', sans-serif;
-  font-size: 2em;
-  visibility: hidden;
-  width: 12em;
-  background-color: transparent;
-  color: #111;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 50%;
-  margin-left: -60px; }
 
 .tooltip:hover .tooltiptext {
   visibility: visible; }
