@@ -1,0 +1,32 @@
+.about {
+    background-color: $bg-color-grey;
+    padding: 2em;
+    height: 100vh;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 2rem;
+        width: 60%;
+        height: calc(100vh - 50%);
+        padding: 3.5rem;
+
+        
+        @include respond(tab-port) {
+            width: 100%;
+            font-size: 2.2rem;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    }
+
+    &__buttons {
+        
+        &-item {
+            font-size: 1.3rem;
+        }
+    }
+}
+

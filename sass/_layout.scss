@@ -50,7 +50,7 @@
         font-family: vivaldi, serif;
         font-size: 14em;
         text-align: center;
-        // padding: 1em;
+
     }
 
     &__svg {
@@ -158,6 +158,10 @@
 
     text-decoration: none;
     color: $color-grey;
+
+    @include respond(tab-port) {
+        display: none;
+    }
     &__text {
         margin-bottom: 6px;
         font-size: 1.7em;
@@ -170,14 +174,23 @@
             width: 2rem;
             height: 1rem;
         }
-        @include respond(tab-port) {
-            width: 1.5rem;
-            height: 1rem;
-        }
     }
 }
 
 .know-more {
     display: none;
+
+    @include respond(tab-port) {
+        position: absolute;
+        bottom: 5rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        display: block;
+        margin: auto;
+        width: fit-content;
+        font-size: 3em;
+        
+    }
 }
 

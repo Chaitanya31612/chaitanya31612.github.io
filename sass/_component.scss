@@ -64,6 +64,37 @@
 }
 
 .btn-primary {
+    &,
+    &:link, 
+    &:visited {
+        background-color: $color-white;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 2rem 4rem;
+        margin-right: 4rem;
+        border-radius: 10rem;
+        transition: all .3s;
+        font-family: 'Gilroy-Heavy', sans-serif;
+        letter-spacing: 1px;
+        color: $color-black;
+
+        box-shadow: 
+            -12px -12px 25px rgba($color-white,1),
+            12px 12px 25px rgba($color-blue-light,0.5);
+    }
+
+    &:hover {
+        box-shadow: 
+        15px 15px 25px rgba($color-white,1),
+        -10px -10px 25px rgba($color-blue-light,0.2);
+    }
+
+    &:active,
+    &:focus {
+        box-shadow: 
+        -15px -15px 25px rgba($color-white,1),
+        10px 10px 25px rgba($color-blue-light,0.5);
+    }
 
 }
 
@@ -94,4 +125,16 @@
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 4rem;
+
+    &__underline > div:first-child {
+        margin-top: 0;
+    }
 }
