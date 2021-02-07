@@ -45,6 +45,8 @@ body {
   text-shadow: -14px -14px 23px rgba(255, 255, 255, 0.24), 14px 14px 23px rgba(0, 0, 0, 0.24); }
   .heading-1--light {
     color: #fff; }
+  .heading-1--dark {
+    color: #010B30; }
 
 .heading-3 {
   font-family: 'Poppins', sans-serif;
@@ -82,7 +84,7 @@ body {
   background-color: #000411; }
 
 .btn-primary, .btn-primary:link, .btn-primary:visited {
-  background-color: #fff;
+  background-color: #F6F6F6;
   text-transform: uppercase;
   text-decoration: none;
   padding: 2rem 4rem;
@@ -92,13 +94,13 @@ body {
   font-family: 'Gilroy-Heavy', sans-serif;
   letter-spacing: 1px;
   color: #111;
-  box-shadow: -12px -12px 25px white, 12px 12px 25px rgba(165, 181, 248, 0.5); }
+  box-shadow: -12px -12px 25px white, 12px 12px 25px rgba(165, 181, 248, 0.4); }
 
 .btn-primary:hover {
-  box-shadow: 15px 15px 25px white, -10px -10px 25px rgba(165, 181, 248, 0.2); }
+  box-shadow: 12px 12px 25px white, -10px -10px 25px rgba(165, 181, 248, 0.2); }
 
 .btn-primary:active, .btn-primary:focus {
-  box-shadow: -15px -15px 25px white, 10px 10px 25px rgba(165, 181, 248, 0.5); }
+  box-shadow: -12px -12px 25px white, 10px 10px 25px rgba(165, 181, 248, 0.4); }
 
 .tooltip {
   position: relative;
@@ -298,3 +300,9 @@ body {
         align-items: center; } }
   .about__buttons-item {
     font-size: 1.3rem; }
+
+.skills {
+  height: 100vh; }
+  .skills__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }

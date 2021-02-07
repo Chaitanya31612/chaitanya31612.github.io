@@ -10,6 +10,9 @@
         color: $color-white;
 
     }
+    &--dark {
+        color: $color-dark-blue;
+    }
 
     @include respond(phone) {
         
@@ -67,7 +70,7 @@
     &,
     &:link, 
     &:visited {
-        background-color: $color-white;
+        background-color: $bg-color-grey;
         text-transform: uppercase;
         text-decoration: none;
         padding: 2rem 4rem;
@@ -80,20 +83,20 @@
 
         box-shadow: 
             -12px -12px 25px rgba($color-white,1),
-            12px 12px 25px rgba($color-blue-light,0.5);
+            12px 12px 25px rgba($color-blue-light,0.4);
     }
 
     &:hover {
         box-shadow: 
-        15px 15px 25px rgba($color-white,1),
+        12px 12px 25px rgba($color-white,1),
         -10px -10px 25px rgba($color-blue-light,0.2);
     }
 
     &:active,
     &:focus {
         box-shadow: 
-        -15px -15px 25px rgba($color-white,1),
-        10px 10px 25px rgba($color-blue-light,0.5);
+        -12px -12px 25px rgba($color-white,1),
+        10px 10px 25px rgba($color-blue-light,0.4);
     }
 
 }
