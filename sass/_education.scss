@@ -1,0 +1,61 @@
+.education {
+    // height: 100vh;
+    background-color: $bg-color-grey;
+    padding-bottom: 10rem;
+}
+
+.content-container {
+    width: 70%;
+
+    @include respond(tab-port) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.content-list {
+    padding: 2rem 4rem;
+    line-height: 1.7;
+    font-size: 1.9rem;
+
+    @include respond(phone) {
+        font-size: 1.7rem;
+    }
+
+    &__title {
+        color: $color-black;
+        margin-bottom: 1.5rem;
+    }
+
+    &__name {
+        color: $color-grey;
+        font-weight: 300;
+        letter-spacing: 1.1px;
+
+        &-link {
+            text-decoration: none;
+            color: darken($color: $color-blue-light, $amount: 40);
+            letter-spacing: 1.1px;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+
+    &__about {
+        font-size: 1.5rem;
+        margin: 1.5rem 0;
+        color: darken($color-grey, 10);
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        text-align: justify;
+
+        @include respond(tab-port) {
+            width: 60%;
+            margin: 2rem auto;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__date {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}

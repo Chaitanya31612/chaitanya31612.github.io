@@ -33,6 +33,7 @@ $bg-color-grey: #F6F6F6;
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 
     @include respond(tab-land) {
         font-size: 56.25%;

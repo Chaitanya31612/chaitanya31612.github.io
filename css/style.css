@@ -22,7 +22,8 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media only screen and (max-width: 68.7em) {
     html {
       font-size: 56.25%; } }
@@ -40,21 +41,26 @@ body {
 
 .heading-1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 10em;
+  font-size: 8rem;
   text-transform: uppercase;
-  text-shadow: -14px -14px 23px rgba(255, 255, 255, 0.24), 14px 14px 23px rgba(0, 0, 0, 0.24); }
+  text-shadow: -14px -14px 23px rgba(255, 255, 255, 0.24), 14px 14px 23px rgba(17, 17, 17, 0.24); }
   .heading-1--light {
     color: #fff; }
   .heading-1--dark {
     color: #010B30; }
+  .heading-1--m {
+    font-size: 7.2rem; }
 
 .heading-3 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.1em;
+  font-size: 2rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #646464; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-3 {
+      font-size: 1.6rem; } }
 
 .underline {
   width: 15rem;
@@ -94,7 +100,11 @@ body {
   font-family: 'Gilroy-Heavy', sans-serif;
   letter-spacing: 1px;
   color: #111;
+  font-size: 1.7rem;
   box-shadow: -12px -12px 25px white, 12px 12px 25px rgba(165, 181, 248, 0.4); }
+  @media only screen and (max-width: 56.25em) {
+    .btn-primary, .btn-primary:link, .btn-primary:visited {
+      font-size: 1.5rem; } }
 
 .btn-primary:hover {
   box-shadow: 12px 12px 25px white, -10px -10px 25px rgba(165, 181, 248, 0.2); }
@@ -131,9 +141,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-left: 4rem; }
+  padding-left: 4rem;
+  padding-top: 3rem; }
   .title__underline > div:first-child {
     margin-top: 0; }
+  @media only screen and (max-width: 56.25em) {
+    .title {
+      align-items: center;
+      padding-top: 10rem;
+      padding-left: 0; } }
 
 .home {
   background-color: #F6F6F6;
@@ -167,7 +183,8 @@ body {
     align-items: center; }
     @media only screen and (max-width: 46.8em) {
       .home__heading__main {
-        padding-right: 0; } }
+        padding-right: 0;
+        font-size: 1.2em; } }
   .home__heading__name {
     font-family: vivaldi, serif;
     font-size: 14em;
@@ -198,8 +215,9 @@ body {
   align-items: center; }
   @media only screen and (max-width: 37.5em) {
     .home__top > h1:first-child {
-      padding-left: 30%;
-      font-size: 8em; } }
+      padding-left: 25%;
+      font-size: 10em;
+      margin-bottom: 3rem; } }
 
 .toggle {
   display: flex;
@@ -277,8 +295,7 @@ body {
       transform: translate(-50%, 0);
       display: block;
       margin: auto;
-      width: fit-content;
-      font-size: 3em; } }
+      width: fit-content; } }
 
 .about {
   background-color: #F6F6F6;
@@ -298,11 +315,58 @@ body {
         font-size: 2.2rem;
         justify-content: space-between;
         align-items: center; } }
-  .about__buttons-item {
-    font-size: 1.3rem; }
 
 .skills {
   height: 100vh; }
   .skills__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
+
+.education {
+  background-color: #F6F6F6;
+  padding-bottom: 10rem; }
+
+.content-container {
+  width: 70%; }
+  @media only screen and (max-width: 56.25em) {
+    .content-container {
+      width: 100%;
+      text-align: center; } }
+
+.content-list {
+  padding: 2rem 4rem;
+  line-height: 1.7;
+  font-size: 1.9rem; }
+  @media only screen and (max-width: 37.5em) {
+    .content-list {
+      font-size: 1.7rem; } }
+  .content-list__title {
+    color: #111;
+    margin-bottom: 1.5rem; }
+  .content-list__name {
+    color: #646464;
+    font-weight: 300;
+    letter-spacing: 1.1px; }
+    .content-list__name-link {
+      text-decoration: none;
+      color: #0f32c2;
+      letter-spacing: 1.1px;
+      font-family: 'Poppins', sans-serif; }
+  .content-list__about {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    color: #4b4b4b;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: justify; }
+    @media only screen and (max-width: 56.25em) {
+      .content-list__about {
+        width: 60%;
+        margin: 2rem auto;
+        font-size: 1.5rem; } }
+  .content-list__date {
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+
+.contact {
+  background-color: #000411;
+  height: 100vh; }

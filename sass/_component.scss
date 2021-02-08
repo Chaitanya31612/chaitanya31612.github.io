@@ -1,10 +1,10 @@
 .heading-1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 10em;
+    font-size: 8rem;
     text-transform: uppercase;
     text-shadow: 
         -14px  -14px 23px rgba($color-white, 0.24),
-        14px  14px 23px rgba(0,0,0, 0.24);
+        14px  14px 23px rgba($color-black,0.24);
 
     &--light {
         color: $color-white;
@@ -12,6 +12,10 @@
     }
     &--dark {
         color: $color-dark-blue;
+    }
+
+    &--m {
+        font-size: 7.2rem;
     }
 
     @include respond(phone) {
@@ -22,11 +26,15 @@
 
 .heading-3 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.1em;
+    font-size: 2rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: $color-grey;
+
+    @include respond(phone) {
+        font-size: 1.6rem;
+    }
 }
 
 .underline {
@@ -80,10 +88,15 @@
         font-family: 'Gilroy-Heavy', sans-serif;
         letter-spacing: 1px;
         color: $color-black;
+        font-size: 1.7rem;
 
         box-shadow: 
             -12px -12px 25px rgba($color-white,1),
             12px 12px 25px rgba($color-blue-light,0.4);
+
+        @include respond(tab-port) {
+            font-size: 1.5rem;
+        }
     }
 
     &:hover {
@@ -136,8 +149,15 @@
     flex-direction: column;
     justify-content: flex-start;
     padding-left: 4rem;
+    padding-top: 3rem;
 
     &__underline > div:first-child {
         margin-top: 0;
+    }
+
+    @include respond(tab-port) {
+        align-items: center;
+        padding-top: 10rem;
+        padding-left: 0;
     }
 }
