@@ -1,4 +1,61 @@
 .contact {
     background-color: $color-primary;
-    height: 100vh;
+    // height: 80vh;
+    padding-bottom: 6rem;
+}
+
+.contact-container {
+    color: $color-grey-2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 4rem;
+    
+
+    @include respond(tab-port) {
+        margin-top: 5rem;
+        font-size: 3.4rem;
+    }
+    
+
+    &__text {
+        text-align: center;
+        
+
+        &__1 {
+            display: block;
+        }
+
+        &--2 {
+            display: block;
+            font-family: 'Gilroy-Heavy', sans-serif;
+            font-size: 3rem;
+            margin-top: 2rem;
+            text-transform: uppercase;
+        }
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        font-family: 'Gilroy-Heavy', sans-serif;
+        
+        text-transform: uppercase;
+        color: $color-grey-light;
+
+
+        &-item:link,&-item:visited  {
+            text-decoration: none;
+            color: $color-grey-light;
+            margin-bottom: 1rem;
+        }
+
+        &-item:active,&-item:hover  {
+            text-decoration: underline;
+            color: $color-grey-light;
+            margin-bottom: 1rem;
+        }
+    }
 }

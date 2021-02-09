@@ -13,6 +13,10 @@
     &--dark {
         color: $color-dark-blue;
     }
+    &--contact {
+        text-shadow: 5px  5px 23px rgba($color-white, 0.24);
+        // border-bottom: 1px $color-white ridge;
+    }
 
     &--m {
         font-size: 7.2rem;
@@ -160,4 +164,7 @@
         padding-top: 10rem;
         padding-left: 0;
     }
+}
+.title hr {
+    width: 15rem;
 }

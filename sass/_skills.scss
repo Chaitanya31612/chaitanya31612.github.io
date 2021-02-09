@@ -3,6 +3,26 @@
     
     &__list {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat( auto-fit, minmax(20rem, 1fr));
+        justify-items: center;
+        gap: 2rem;
+        font-size: 2rem;
+        margin-top: 4rem;
+        font-family: 'Gilroy-Light', sans-serif;
+        
+        & > *:hover {
+            text-transform: uppercase;
+            font-family: 'Gilroy-Medium', sans-serif;
+            cursor: zoom-in;
+        }
     }
+}
+
+.skills-container {
+    // padding: 3rem;
+
+}
+
+.skills-container hr {
+    width: 10rem;
 }
