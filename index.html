@@ -13,8 +13,20 @@
 </head>
 <body>
     <div class="container">
+        <!-- nav -->
+        <div class="nav">
+            <a href="#" class="nav__title">Chaitanya</a>
+            <div class="nav__links">
+                <a href="#home" class="nav__links-item">Home</a>
+                <a href="#about" class="nav__links-item">About</a>
+                <a href="#experience" class="nav__links-item">Experience</a>
+                <a href="#projects" class="nav__links-item">My Projects</a>
+                <a href="#contact" class="nav__links-item">Contact</a>
+            </div>
+        </div>
+        
         <!-- Home -->
-        <div class="home">
+        <div class="home" id="home">
             <div class="home__top m-b-m">
                 <h1 class="heading-1 heading-1--light p-left-m">Welcome</h1>
                 <div class="toggle">
@@ -83,23 +95,23 @@
                     </g>
                 </svg>
                 <div class="home__nav">
-                    <a href="#" class="line-l tooltip"><span class="tooltiptext">Home</span></a>
-                    <a href="#" class="line-s tooltip"><span class="tooltiptext">About</span></a>
-                    <a href="#" class="line-l tooltip"><span class="tooltiptext">Skills</span></a>
-                    <a href="#" class="line-s tooltip"><span class="tooltiptext">Education</span></a>
-                    <a href="#" class="line-l tooltip"><span class="tooltiptext">Experience</span></a>
-                    <a href="#" class="line-s tooltip"><span class="tooltiptext">Projects</span></a>
-                    <a href="#" class="line-l tooltip"><span class="tooltiptext">Contact</span></a>
+                    <a href="#home" class="line-l tooltip"><span class="tooltiptext">Home</span></a>
+                    <a href="#about" class="line-s tooltip"><span class="tooltiptext">About</span></a>
+                    <a href="#skills" class="line-l tooltip"><span class="tooltiptext">Skills</span></a>
+                    <a href="#education" class="line-s tooltip"><span class="tooltiptext">Education</span></a>
+                    <a href="#experience" class="line-l tooltip"><span class="tooltiptext">Experience</span></a>
+                    <a href="#projects" class="line-s tooltip"><span class="tooltiptext">Projects</span></a>
+                    <a href="#contact" class="line-l tooltip"><span class="tooltiptext">Contact</span></a>
                 </div>
 
             </div>
 
 
-            <a href="#" class="btn-primary know-more">
+            <a href="#about" class="btn-primary know-more">
                 Know More
             </a>
 
-            <a href="#" class="learn-more">
+            <a href="#about" class="learn-more">
                 <span class="learn-more__text">Learn More</span>
                 <svg class="learn-more__svg" xmlns="http://www.w3.org/2000/svg" width="30.244" height="18.622" viewBox="0 0 38.244 20.622">
                     <path id="Icon_feather-chevron-down" data-name="Icon feather-chevron-down" d="M9,13.5l17,17,17-17"
@@ -110,11 +122,8 @@
             </a>
         </div>
 
-        <!-- nav -->
-        <div class="nav"></div>
-
         <!-- About -->
-        <div class="about">
+        <div class="about" id="about">
             <div class="title">
                 <h1 class="heading-1 heading-1--light">About</h1>
                 <div class="underline title__underline">
@@ -133,10 +142,10 @@
                 </p>
 
                 <div class="about__buttons">
-                    <a href="#" class="btn-primary about__buttons-item">
+                    <a href="#resume" class="btn-primary about__buttons-item">
                         Resume
                     </a>
-                    <a href="#" class="btn-primary about__buttons-item">
+                    <a href="#projects" class="btn-primary about__buttons-item">
                         My Work
                     </a>
                 </div>
@@ -145,7 +154,7 @@
 
 
         <!-- Skills -->
-        <div class="skills">
+        <div class="skills" id="skills">
             <div class="title">
                 <h1 class="heading-1 heading-1--dark">Skills</h1>
                 <div class="underline title__underline">
@@ -156,6 +165,36 @@
 
 
             <div class="skills-container">
+
+                <div class="core-skills">
+                    <div class="core-skills-item">
+                        <h2 class="core-skills-item-title">
+                            Web Design
+                        </h2>
+                        <p class="core-skills-item-about">
+                            I love designs and it's the first step before creating any website as I can give layout to my imagination.
+                        </p>
+                    </div>
+
+                    <div class="core-skills-item core-skills-item--imp">
+                        <h2 class="core-skills-item-title">
+                            Web Development
+                        </h2>
+                        <p class="core-skills-item-about">
+                            I am a Full Stack Web Developer (MERN) and have quite some experience in it as well.
+                        </p>
+                    </div>
+
+                    <div class="core-skills-item">
+                        <h2 class="core-skills-item-title">
+                            Problem Solving
+                        </h2>
+                        <p class="core-skills-item-about">
+                            I love solving problems whether programming problems or life problems.
+                        </p>
+                    </div>
+                </div>
+
                 <center><div class="heading-3">Tech I'm familiar with</div><hr></center>
 
                 <div class="skills__list">
@@ -184,20 +223,16 @@
                     <div><i class="devicon-visualstudio-plain colored"></i>Visual Studio</div>
                     <div><i class="devicon-pycharm-plain colored"></i>PyCharm</div>
                     <div><i class="devicon-photoshop-plain colored"></i>Photoshop</div>
-                
-                    <!-- <div><img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="">Figma</div>
-                    <div><img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="">Arduino</div>
-                    <div><img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="">GCP</div>
-                    <div><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="">Postman</div>
-                    <div><img src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="">Adobe XD</div>
-                    -->
+                    <div>Postman</div>
+                    <div>Adobe XD</div>
+                   
                 </div>
             </div>
             
         </div>
 
         <!-- Education -->
-        <div class="education">
+        <div class="education" id="education">
             <div class="title">
                 <h1 class="heading-1 heading-1--light heading-1--m">Education</h1>
                 <div class="underline title__underline">
@@ -237,7 +272,7 @@
 
 
         <!-- Experience -->
-        <div class="experience">
+        <div class="experience"  id="experience">
             <div class="title">
                 <h1 class="heading-1 heading-1--dark heading-1--m">Experience</h1>
                 <div class="underline title__underline">
@@ -299,14 +334,14 @@
             </section>
 
             <!-- Projects -->
-            <section class="projects">
+            <section class="projects" id="projects">
 
             </section>
 
             <!-- contact -->
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="title">
-                    <h1 class="heading-1 heading-1--light heading-1--contact heading-1--m">Contact</h1>
+                    <h1 class="heading-1 heading-1--light heading-1--contact">Contact</h1>
                     <hr>
                 </div>
 
@@ -330,5 +365,5 @@
 
     </div>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"></script>
+    <script src="./app.js"></script>
 </html>

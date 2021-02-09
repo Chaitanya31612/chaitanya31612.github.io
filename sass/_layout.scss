@@ -196,3 +196,51 @@
     }
 }
 
+
+
+// nav
+
+.nav {
+    position: fixed;
+    z-index: 999999;
+    background-color: $color-white;
+    top: -70px;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+
+    &__title {
+        font-family: vivaldi, serif;
+        font-size: 5rem;
+        letter-spacing: 2px;
+        margin-left: 2rem;
+        text-decoration: none;
+        color: $color-black;
+        font-weight: bolder;
+    }
+
+    &__links {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+
+        &-item {
+            text-decoration: none;
+            color: $color-grey;
+            font-size: 2rem;
+
+            &:hover {
+                color: $color-black;
+                font-weight: 800;
+            }
+        }
+
+        @include respond(tab-port-2) {
+            display: none;
+        }
+    }
+}

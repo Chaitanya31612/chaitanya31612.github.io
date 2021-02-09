@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 4rem;
+    font-size: 3rem;
     
 
     @include respond(tab-port) {
@@ -41,6 +41,7 @@
         justify-content: space-between;
         flex-direction: column;
         font-family: 'Gilroy-Heavy', sans-serif;
+        letter-spacing: 2px;
         
         text-transform: uppercase;
         color: $color-grey-light;
@@ -54,7 +55,7 @@
 
         &-item:active,&-item:hover  {
             text-decoration: underline;
-            color: $color-grey-light;
+            color: $color-white;
             margin-bottom: 1rem;
         }
     }
