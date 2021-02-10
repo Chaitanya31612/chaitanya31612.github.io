@@ -200,6 +200,14 @@
 
 // nav
 
+.not-active {
+    display: none;
+}
+
+.visible {
+    visibility: visible !important;
+}
+
 .nav {
     position: fixed;
     z-index: 999999;
@@ -221,6 +229,7 @@
         text-decoration: none;
         color: $color-black;
         font-weight: bolder;
+        // transition: all .2s;
     }
 
     &__links {
@@ -240,7 +249,102 @@
         }
 
         @include respond(tab-port-2) {
-            display: none;
+            width: 70%;
+            visibility: hidden;
+        }
+        @include respond(phone) {
+            width: 100%;
+            visibility: hidden;
         }
     }
+}
+
+.nav-mob {
+    display: none;
+
+    @include respond(tab-port-2) {
+        display: contents;
+    }
+}
+
+
+/* 
+------------------------------------
+     HAMBURGER ANIMATION
+------------------------------------
+*/
+.hamburger_wrapper{
+  float: right;
+}
+
+.hamburger {
+  width: 2.5em;
+  height: 2em;
+  font-size: 11px;
+  cursor: pointer;
+  position: relative;
+}
+
+.first, .second, .third {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.85);
+  height: .45em;
+  width: 100%;
+  float: left;
+  border-radius: 2px;
+  transition: all .35s ease-in-out;
+  
+}
+
+.first {
+  top: 0px;
+}
+
+.is-active .first {
+  transform-origin: .167em .33em;
+  transform: rotate(45deg) translate(0.167em, -0.25em);
+}
+
+.second {
+  top: 50%;
+  margin-top: -.25em;
+}
+
+.is-active .second {
+  opacity: 0;
+  transform: translateX(8em)
+}
+
+.third {
+  bottom: 0px;
+  transform-origin: .25em -0.33em;
+}
+
+.is-active .third {
+  transform: rotate(-45deg) translate(-0.167em, 0.083em);
+}
+
+
+.navbar-brand{
+  font-size: 30px;
+  font-weight: bold;
+}
+.navbar{
+  color:#000000;
+  background-color: #fff;
+}
+
+/**Navbar burger animations**/
+.navbar-toggler{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: all .2s ease-in-out; 
+  border-color: white;
+  border: none;
+  outline: none;
 }

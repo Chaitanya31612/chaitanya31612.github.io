@@ -31,6 +31,41 @@ $bg-color-grey: #F6F6F6;
     box-sizing: inherit;
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.5); 
+    border-radius: 6px;
+    background: #f1f1f1;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    max-height: 6px;
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,1);  
+    background: #555;
+    transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666; 
+}
+
+// darkmode
+.dark-mode {
+    filter: invert(1) hue-rotate(180deg)
+}
+
+.invert {
+    filter: invert(1) hue-rotate(180deg)
+}
+
+.same {
+    filter: invert(1) hue-rotate(180deg)
+}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -47,6 +82,35 @@ html {
     @include respond(big-desktop) {
         font-size: 75%;
     }
+}
+
+
+
+.loader {
+    font-family: vivaldi, serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+    font-size: 10rem;
+    color: $color-grey;
+}
+
+.disappear {
+  animation: vanish 1s forwards;
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 
