@@ -117,7 +117,20 @@
         10px 10px 25px rgba($color-blue-light,0.4);
     }
 
+    &--center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto !important;
+        width: fit-content;
+    }
+
 }
+
+// .btn-center {
+//     display: block;
+//     margin: auto;
+//     width: fit-content;
+// }
 
 .tooltip {
     position: relative;

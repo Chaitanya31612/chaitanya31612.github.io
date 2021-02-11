@@ -1,0 +1,71 @@
+.projects {
+    background-color: $bg-color-grey;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+}
+
+
+.project-container {
+    // width: 350px;
+}
+
+.project-img {
+    width: 40rem;
+    text-align: center;
+}
+
+.project-tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    width: 100%;
+
+}
+
+.tagbutton{
+  background-color: lighten($color-blue-light, 15);
+  color: darken($color-blue-light, 30);
+  margin-top: 5px;
+  margin-right: 7px;
+  border-radius: 100px;
+  border:none;
+  padding: 5px 8px;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.tagbutton span {
+  padding-right: 5.5px;
+}
+
+.tagimg {
+  width: 2.5rem;
+  margin: auto 0;
+  outline: none;
+  margin-left: -8px;
+}
+
+// links
+.project-links {
+    & > ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // margin-top: -1rem;
+    }
+
+
+    & > ul > * {
+        list-style: none;
+        margin-right: 1rem;
+    }
+}
+
+.social-icon svg {
+  margin-top: 4rem;
+}
+.social-icon svg:hover {
+  fill: $color-black;
+}

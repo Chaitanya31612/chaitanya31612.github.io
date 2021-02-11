@@ -29,30 +29,30 @@ $(function(){
 });
 
 //dark mode toggle
-$(function(){
+// $(function(){
   
-  $(".toggle--dark").on("click", function(){
-    document.documentElement.classList.add('dark-mode')
+//   $(".toggle--dark").on("click", function(){
+//     document.documentElement.classList.add('dark-mode')
     
-    document.querySelectorAll('.t-btn').forEach((result) => {
-      result.classList.add('same')
-    })
+//     document.querySelectorAll('.t-btn').forEach((result) => {
+//       result.classList.add('same')
+//     })
 
-    document.querySelectorAll('.inverted').forEach((result) => {
-      result.classList.toggle('invert')
-    })
-  });
+//     document.querySelectorAll('.inverted').forEach((result) => {
+//       result.classList.toggle('invert')
+//     })
+//   });
 
-});
+// });
 
-$(function(){
+// $(function(){
   
-  $(".toggle--light").on("click", function(){
-    document.documentElement.classList.remove('dark-mode')
-    document.querySelectorAll('.t-btn').forEach((result) => {
-      result.classList.remove('same')
-    })
-  });
+//   $(".toggle--light").on("click", function(){
+//     document.documentElement.classList.remove('dark-mode')
+//     document.querySelectorAll('.t-btn').forEach((result) => {
+//       result.classList.remove('same')
+//     })
+//   });
 
-});
+// });
 
