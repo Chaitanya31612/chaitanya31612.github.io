@@ -51,12 +51,12 @@
         color: darken($color-grey, 10);
         font-weight: 400;
         letter-spacing: 0.5px;
-        text-align: justify;
+        // text-align: justify;
 
         @include respond(tab-port-2) {
-            width: 60%;
+            width: 90%;
             margin: 2rem auto;
-            font-size: 1.5rem;
+            // font-size: 1.5rem;
         }
     }
 

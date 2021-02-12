@@ -503,7 +503,7 @@ body {
   padding-top: 5rem; }
   .skills__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     justify-items: center;
     gap: 2rem;
     font-size: 2rem;
@@ -587,13 +587,11 @@ body {
     margin: 1.5rem 0;
     color: #4b4b4b;
     font-weight: 400;
-    letter-spacing: 0.5px;
-    text-align: justify; }
+    letter-spacing: 0.5px; }
     @media only screen and (max-width: 46.8em) {
       .content-list__about {
-        width: 60%;
-        margin: 2rem auto;
-        font-size: 1.5rem; } }
+        width: 90%;
+        margin: 2rem auto; } }
   .content-list__date {
     font-family: Georgia, 'Times New Roman', Times, serif; }
 
