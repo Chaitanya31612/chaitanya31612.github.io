@@ -141,8 +141,9 @@
             border: .4.1rem solid $color-grey-light;
         }
         @include respond(tab-port) {
-            margin: 1em 2.5em 1em 0;
-            border: .4.1rem solid $color-grey-light;
+            display: none;
+            // margin: 1em 2.5em 1em 0;
+            // border: .4.1rem solid $color-grey-light;
         }
         @include respond(phone) {
             display: none;
@@ -253,10 +254,11 @@
         @include respond(tab-port-2) {
             width: 70%;
             visibility: hidden;
+            display: none;
         }
         @include respond(phone) {
-            width: 100%;
-            visibility: hidden;
+            // width: 100%;
+            // visibility: hidden;
         }
     }
 }

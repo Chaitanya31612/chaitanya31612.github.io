@@ -419,8 +419,7 @@ body {
         border: 0.4 0.1rem solid #C7C7C7; } }
     @media only screen and (max-width: 56.25em) {
       .toggle--light {
-        margin: 1em 2.5em 1em 0;
-        border: 0.4 0.1rem solid #C7C7C7; } }
+        display: none; } }
     @media only screen and (max-width: 37.5em) {
       .toggle--light {
         display: none; } }
@@ -502,11 +501,8 @@ body {
     @media only screen and (max-width: 46.8em) {
       .nav__links {
         width: 70%;
-        visibility: hidden; } }
-    @media only screen and (max-width: 37.5em) {
-      .nav__links {
-        width: 100%;
-        visibility: hidden; } }
+        visibility: hidden;
+        display: none; } }
 
 .nav-mob {
   display: none; }
