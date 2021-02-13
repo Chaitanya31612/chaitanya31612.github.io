@@ -163,6 +163,7 @@
 
     text-decoration: none;
     color: $color-grey;
+    animation: MoveUpDown 1s ease-in-out infinite;
 
     @include respond(tab-port) {
         display: none;
@@ -180,6 +181,16 @@
             height: 1rem;
         }
     }
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 5px;
+  }
+  50% {
+    // transform: translateY(2px);
+    bottom: 8px;
+  }
 }
 
 .know-more {

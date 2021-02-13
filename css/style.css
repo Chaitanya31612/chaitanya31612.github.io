@@ -434,7 +434,8 @@ body {
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
-  color: #646464; }
+  color: #646464;
+  animation: MoveUpDown 1s ease-in-out infinite; }
   @media only screen and (max-width: 56.25em) {
     .learn-more {
       display: none; } }
@@ -448,6 +449,12 @@ body {
       .learn-more__svg {
         width: 2rem;
         height: 1rem; } }
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 5px; }
+  50% {
+    bottom: 8px; } }
 
 .know-more {
   display: none; }
