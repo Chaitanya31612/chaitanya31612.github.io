@@ -475,7 +475,9 @@ body {
   visibility: visible !important;
   display: contents !important; }
   .visible > a {
-    font-size: .7em !important; }
+    font-size: 1.5rem !important; }
+  .visible > a:first-child {
+    margin-left: 1rem; }
 
 .nav {
   position: fixed;
