@@ -209,6 +209,10 @@
 
 .visible {
     visibility: visible !important;
+    display: contents !important;
+    & > a {
+        font-size: .7em !important;
+    }
 }
 
 .nav {
@@ -254,11 +258,11 @@
         @include respond(tab-port-2) {
             width: 70%;
             visibility: hidden;
-            display: none;
         }
         @include respond(phone) {
-            // width: 100%;
-            // visibility: hidden;
+            width: 100%;
+            visibility: hidden;
+            display: none;
         }
     }
 }

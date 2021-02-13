@@ -465,7 +465,10 @@ body {
   display: none; }
 
 .visible {
-  visibility: visible !important; }
+  visibility: visible !important;
+  display: contents !important; }
+  .visible > a {
+    font-size: .7em !important; }
 
 .nav {
   position: fixed;
@@ -501,6 +504,10 @@ body {
     @media only screen and (max-width: 46.8em) {
       .nav__links {
         width: 70%;
+        visibility: hidden; } }
+    @media only screen and (max-width: 37.5em) {
+      .nav__links {
+        width: 100%;
         visibility: hidden;
         display: none; } }
 
