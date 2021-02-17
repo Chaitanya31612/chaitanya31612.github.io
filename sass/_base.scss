@@ -148,6 +148,11 @@ $bg-color-grey: #F6F6F6;
   background: $color-dark-blue;
 }
 
+::selection {
+  background-color: $color-blue-light;
+  color: $color-white;
+}
+
 // darkmode
 .dark-mode {
     filter: invert(1) hue-rotate(180deg);

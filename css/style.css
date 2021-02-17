@@ -127,6 +127,10 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #010B30; }
 
+::selection {
+  background-color: #A5B5F8;
+  color: #fff; }
+
 .dark-mode {
   filter: invert(1) hue-rotate(180deg); }
 
