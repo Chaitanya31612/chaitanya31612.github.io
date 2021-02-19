@@ -267,7 +267,8 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto !important;
-  width: fit-content; }
+  width: fit-content;
+  width: -moz-fit-content; }
 
 .tooltip {
   position: relative;
