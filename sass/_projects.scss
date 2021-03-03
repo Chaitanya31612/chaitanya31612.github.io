@@ -54,13 +54,21 @@
         justify-content: center;
         align-items: center;
         // margin-top: -1rem;
+
+        & > li > a > img {
+          margin-top: 30px !important;
+          width: 25px;
+          height: 20px;
+        }
     }
 
 
     & > ul > * {
+        display: inline-block;
         list-style: none;
         margin-right: 1rem;
     }
+
 }
 
 .social-icon svg {

@@ -282,7 +282,7 @@ body {
   visibility: hidden;
   width: 10rem;
   background-color: transparent;
-  color: #111;
+  color: #000411;
   text-align: center;
   border-radius: 6px;
   padding: 1.1rem 0;
@@ -799,8 +799,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .project-links > ul > li > a > img {
+    margin-top: 30px !important;
+    width: 25px;
+    height: 20px; }
 
 .project-links > ul > * {
+  display: inline-block;
   list-style: none;
   margin-right: 1rem; }
 
