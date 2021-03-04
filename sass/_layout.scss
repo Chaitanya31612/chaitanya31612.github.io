@@ -70,6 +70,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    // & > div:hover {
+    //     transform: scale(1.03);
+    // }
+    & > a {
+        transition: all .2s;
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
     
     @include respond(phone) {
         display: none;

@@ -366,6 +366,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end; }
+  .home__nav > a {
+    transition: all .2s; }
+    .home__nav > a:hover {
+      transform: scale(1.03); }
   @media only screen and (max-width: 37.5em) {
     .home__nav {
       display: none; } }
