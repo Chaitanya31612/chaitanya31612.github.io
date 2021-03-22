@@ -14,7 +14,7 @@
     <link rel="icon" href="img/cg.png" type="image/x-icon">
     <title>Chaitanya &vert; Portfolio</title>
 </head>
-<body>
+<body onload="checkTheme()">
 
     <div class="loader">
         <div class="underline title__underline">
@@ -56,8 +56,8 @@
             <div class="home__top m-b-m">
                 <h1 class="heading-1 heading-1--light">Welcome</h1>
                 <div class="toggle t-btn">
-                    <!-- <div class="toggle--dark"></div> -->
-                    <div class="toggle--light"></div>
+                    <div class="toggle--dark" id="black"></div>
+                    <div class="toggle--light" id="white"></div>
                 </div>
             </div>
 
@@ -915,6 +915,15 @@
 
         gtag('config', 'G-8JFRFPTVM9');
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/darkreader/darkreader.min.js" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript">
+        DarkReader.enable({
+            brightness: 100,
+            contrast: 90,
+            sepia: 10
+        });
+    </script> -->
 
 
 </html>
