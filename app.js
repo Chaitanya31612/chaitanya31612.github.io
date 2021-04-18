@@ -60,6 +60,13 @@ $(function(){
     });
 
     document.getElementById("white").setAttribute('style', 'background:white !important');
+    // const icons = document.getElementsByClassName("social-icon")
+    // console.log(icons);
+    // for (let i = 0; i < icons.length; i++) {
+    //   console.log("here");
+    //   console.log(icons[i]);
+    // }
+
     localStorage.setItem("theme", "dark");
   });
 
