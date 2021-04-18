@@ -817,4 +817,5 @@ body {
   margin-top: 4rem; }
 
 .social-icon svg:hover {
-  fill: #111; }
+  fill: #111;
+  fill: var(--background-svg); }
