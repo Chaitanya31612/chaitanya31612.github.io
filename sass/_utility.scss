@@ -1,34 +1,44 @@
 .p-left-s {
-    padding-left: 5rem;
+  padding-left: 5rem;
 }
 
 .p-left-m {
-    padding-left: 10rem;
+  padding-left: 10rem;
 }
 
 .p-left-l {
-    padding-left: 15rem;
+  padding-left: 15rem;
 }
 
 .m-b-m {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 // mixins
 @mixin respond($breakpoint) {
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-    @if $breakpoint == tab-port-2 {
-        @media only screen and (max-width: 46.8em) { @content };    //750px
-    }
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 68.7em) { @content };    //1200px
-    }
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == tab-port-2 {
+    @media only screen and (max-width: 46.8em) {
+      @content;
+    } //750px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 68.7em) {
+      @content;
+    } //1200px
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }
 }

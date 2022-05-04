@@ -1,132 +1,123 @@
 .heading-1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 8rem;
-    text-transform: uppercase;
-    text-shadow: 
-        -14px  -14px 23px rgba($color-white, 0.24),
-        14px  14px 23px rgba($color-black,0.24);
+  font-family: "Poppins", sans-serif;
+  font-size: 8rem;
+  text-transform: uppercase;
+  text-shadow: -14px -14px 23px rgba($color-white, 0.24),
+    14px 14px 23px rgba($color-black, 0.24);
 
-    &--light {
-        color: $color-white;
+  &--light {
+    color: $color-white;
+  }
+  &--dark {
+    color: $color-dark-blue;
+  }
+  &--contact {
+    text-shadow: 5px 5px 23px rgba($color-white, 0.24);
+    font-size: 6rem;
+    // border-bottom: 1px $color-white ridge;
+  }
 
-    }
-    &--dark {
-        color: $color-dark-blue;
-    }
-    &--contact {
-        text-shadow: 5px  5px 23px rgba($color-white, 0.24);
-        font-size: 6rem;
-        // border-bottom: 1px $color-white ridge;
-    }
+  &--m {
+    font-size: 7.2rem;
+  }
 
-    &--m {
-        font-size: 7.2rem;
-    }
-
-    @include respond(phone) {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
+  @include respond(phone) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .heading-3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: $color-grey;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: $color-grey;
 
-    @include respond(phone) {
-        font-size: 1.6rem;
-    }
+  @include respond(phone) {
+    font-size: 1.6rem;
+  }
 }
 
 .underline {
-    width: 15rem;
-    margin-bottom: 3rem;
+  width: 15rem;
+  margin-bottom: 3rem;
+  background-color: $bg-color-grey;
+
+  &--1 {
+    margin: 3rem 2rem 1.4px 0;
+    border-bottom: 5px solid $color-dark-blue;
+    border-radius: 4px;
     background-color: $bg-color-grey;
-    
-    
-    &--1 {
-        margin: 3rem 2rem 1.4px 0;
-        border-bottom: 5px solid $color-dark-blue;
-        border-radius: 4px;
-        background-color: $bg-color-grey;
-    }
-    &--2 {
-        margin-left: 2rem;
-        border-bottom: 5px solid $color-dark-blue;
-        border-radius: 4px;
-        background-color: $bg-color-grey;
-    }
+  }
+  &--2 {
+    margin-left: 2rem;
+    border-bottom: 5px solid $color-dark-blue;
+    border-radius: 4px;
+    background-color: $bg-color-grey;
+  }
 }
 
 .line {
-    
-    &-l {
-        width: 6em;
-        height: 4px;
-        margin: 1em 2em 5em 2em;
-        background-color: $color-primary;
-    }
+  &-l {
+    width: 6em;
+    height: 4px;
+    margin: 1em 2em 5em 2em;
+    background-color: $color-primary;
+  }
 
-    &-s {
-        width: 4em;
-        height: 3.6px;
-        margin: 1em 2em 5em 2em;
-        background-color: $color-primary;
-    }
+  &-s {
+    width: 4em;
+    height: 3.6px;
+    margin: 1em 2em 5em 2em;
+    background-color: $color-primary;
+  }
 }
 
 .btn-primary {
-    &,
-    &:link, 
-    &:visited {
-        background-color: $bg-color-grey;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 2rem 4rem;
-        margin-right: 4rem;
-        border-radius: 10rem;
-        transition: all .3s;
-        font-family: 'Gilroy-Heavy', sans-serif;
-        letter-spacing: 1px;
-        color: $color-black;
-        font-size: 1.7rem;
+  &,
+  &:link,
+  &:visited {
+    background-color: $bg-color-grey;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 2rem 4rem;
+    margin-right: 4rem;
+    border-radius: 10rem;
+    transition: all 0.3s;
+    font-family: "Gilroy-Heavy", sans-serif;
+    letter-spacing: 1px;
+    color: $color-black;
+    font-size: 1.7rem;
 
-        box-shadow: 
-            -12px -12px 25px rgba($color-white,1),
-            12px 12px 25px rgba($color-blue-light,0.4);
+    box-shadow: -12px -12px 25px rgba($color-white, 1),
+      12px 12px 25px rgba($color-blue-light, 0.4);
 
-        @include respond(tab-port) {
-            font-size: 1.5rem;
-        }
+    @include respond(tab-port) {
+      font-size: 1.5rem;
     }
+  }
 
-    &:hover {
-        box-shadow: 
-        12px 12px 25px rgba($color-white,1),
-        -10px -10px 25px rgba($color-blue-light,0.2);
-    }
+  &:hover {
+    box-shadow: 12px 12px 25px rgba($color-white, 1),
+      -10px -10px 25px rgba($color-blue-light, 0.2);
+  }
 
-    &:active,
-    &:focus {
-        box-shadow: 
-        -12px -12px 25px rgba($color-white,1),
-        10px 10px 25px rgba($color-blue-light,0.4);
-    }
+  &:active,
+  &:focus {
+    box-shadow: -12px -12px 25px rgba($color-white, 1),
+      10px 10px 25px rgba($color-blue-light, 0.4);
+  }
 
-    &--center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto !important;
-        width: fit-content;
-        width: -moz-fit-content;
-    }
-
+  &--center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto !important;
+    width: fit-content;
+    width: -moz-fit-content;
+  }
 }
 
 // .btn-center {
@@ -136,52 +127,65 @@
 // }
 
 .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
 }
 
 .tooltip .tooltiptext {
-    font-family: 'Gilroy-Regular', sans-serif;
-    font-size: 2em;
-    font-weight: 800;
-    visibility: hidden;
-    width: 10rem;
-    background-color: transparent;
-    color: $color-primary;
-    text-align: center;
-    border-radius: 6px;
-    padding: 1.1rem 0;
-    
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    top: -1.2em;
-    right: 105%;
+  font-family: "Gilroy-Regular", sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  visibility: hidden;
+  width: 10rem;
+  background-color: transparent;
+  color: $color-primary;
+  text-align: center;
+  border-radius: 6px;
+  padding: 1.1rem 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -1.2em;
+  right: 105%;
+
+  &--small {
+    font-size: 1.4em;
+  }
 }
 
 .tooltip:hover .tooltiptext {
-    visibility: visible;
+  visibility: visible;
 }
-
 
 .title {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-left: 4rem;
-    padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 4rem;
+  padding-top: 3rem;
 
-    &__underline > div:first-child {
-        margin-top: 0;
-    }
+  &__underline > div:first-child {
+    margin-top: 0;
+  }
 
-    @include respond(tab-port) {
-        align-items: center;
-        padding-top: 10rem;
-        padding-left: 0;
-    }
+  @include respond(tab-port) {
+    align-items: center;
+    padding-top: 10rem;
+    padding-left: 0;
+  }
 }
 .title hr {
-    width: 15rem;
+  width: 15rem;
+}
+
+.light-shadow {
+  box-shadow: -12px -12px 25px rgba($color-white, 1),
+    12px 12px 25px rgba($color-blue-light, 0.4);
+}
+
+.dark-shadow {
+  box-shadow: -12px -12px 25px rgba(#000, 1),
+    12px 12px 25px rgba($color-blue-light, 0.4);
 }

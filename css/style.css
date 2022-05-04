@@ -183,7 +183,7 @@ body {
   font-family: 'Gilroy-Regular', sans-serif; }
 
 .heading-1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 8rem;
   text-transform: uppercase;
   text-shadow: -14px -14px 23px rgba(255, 255, 255, 0.24), 14px 14px 23px rgba(17, 17, 17, 0.24); }
@@ -203,7 +203,7 @@ body {
       justify-content: center; } }
 
 .heading-3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -247,8 +247,8 @@ body {
   padding: 2rem 4rem;
   margin-right: 4rem;
   border-radius: 10rem;
-  transition: all .3s;
-  font-family: 'Gilroy-Heavy', sans-serif;
+  transition: all 0.3s;
+  font-family: "Gilroy-Heavy", sans-serif;
   letter-spacing: 1px;
   color: #111;
   font-size: 1.7rem;
@@ -276,7 +276,7 @@ body {
   border-bottom: 1px dotted black; }
 
 .tooltip .tooltiptext {
-  font-family: 'Gilroy-Regular', sans-serif;
+  font-family: "Gilroy-Regular", sans-serif;
   font-size: 2em;
   font-weight: 800;
   visibility: hidden;
@@ -291,6 +291,8 @@ body {
   z-index: 1;
   top: -1.2em;
   right: 105%; }
+  .tooltip .tooltiptext--small {
+    font-size: 1.4em; }
 
 .tooltip:hover .tooltiptext {
   visibility: visible; }
@@ -311,6 +313,12 @@ body {
 
 .title hr {
   width: 15rem; }
+
+.light-shadow {
+  box-shadow: -12px -12px 25px white, 12px 12px 25px rgba(165, 181, 248, 0.4); }
+
+.dark-shadow {
+  box-shadow: -12px -12px 25px black, 12px 12px 25px rgba(165, 181, 248, 0.4); }
 
 .home {
   background-color: #F6F6F6;
@@ -512,6 +520,9 @@ body {
     width: 50%;
     display: flex;
     justify-content: space-evenly; }
+    @media only screen and (max-width: 56.25em) {
+      .nav__links .hide {
+        display: none; } }
     .nav__links-item {
       text-decoration: none;
       color: #646464;
@@ -608,7 +619,19 @@ body {
   padding: 2em;
   height: 100vh;
   padding-top: 3em; }
+  .about__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .about__image {
+    height: 40vh;
+    border: 5px #ccc dashed;
+    margin-right: 10rem; }
+    @media only screen and (max-width: 56.25em) {
+      .about__image {
+        display: none; } }
   .about__content {
+    height: 50vh !important;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -633,10 +656,10 @@ body {
     gap: 2rem;
     font-size: 2rem;
     margin-top: 4rem;
-    font-family: 'Gilroy-Light', sans-serif; }
+    font-family: "Gilroy-Light", sans-serif; }
     .skills__list > *:hover {
       text-transform: uppercase;
-      font-family: 'Gilroy-Medium', sans-serif;
+      font-family: "Gilroy-Medium", sans-serif;
       cursor: zoom-in; }
 
 .skills-container hr {
@@ -648,13 +671,15 @@ body {
   width: 90%;
   justify-items: center;
   margin: 0 auto;
-  gap: 3rem;
+  gap: 4rem;
   font-size: 1.6rem;
   margin-bottom: 7rem; }
+  .core-skills--project {
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr)); }
   .core-skills-item {
     background-color: #F6F6F6;
     box-shadow: -12px -12px 25px white, 12px 12px 25px rgba(165, 181, 248, 0.4);
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     padding: 4rem; }
     .core-skills-item:hover {
       transform: scale(1.01); }
@@ -817,5 +842,4 @@ body {
   margin-top: 4rem; }
 
 .social-icon svg:hover {
-  fill: #111;
-  fill: var(--background-svg); }
+  fill: #111; }

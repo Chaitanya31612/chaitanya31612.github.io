@@ -1,81 +1,81 @@
 .skills {
-    // height: 100vh;
-    padding-bottom: 10rem;
-    padding-top: 5rem;
-    
-    &__list {
-        display: grid;
-        grid-template-columns: repeat( auto-fit, minmax(30rem, 1fr));
-        justify-items: center;
-        gap: 2rem;
-        font-size: 2rem;
-        margin-top: 4rem;
-        font-family: 'Gilroy-Light', sans-serif;
-        
-        & > *:hover {
-            text-transform: uppercase;
-            font-family: 'Gilroy-Medium', sans-serif;
-            cursor: zoom-in;
-        }
+  // height: 100vh;
+  padding-bottom: 10rem;
+  padding-top: 5rem;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    justify-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+    margin-top: 4rem;
+    font-family: "Gilroy-Light", sans-serif;
+
+    & > *:hover {
+      text-transform: uppercase;
+      font-family: "Gilroy-Medium", sans-serif;
+      cursor: zoom-in;
     }
+  }
 }
 
 .skills-container {
-    // padding: 3rem;
-
+  // padding: 3rem;
 }
 
 .skills-container hr {
-    width: 10rem;
+  width: 10rem;
 }
 
 .core-skills {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    width: 90%;
-    justify-items: center;
-    margin: 0 auto;
-    gap: 3rem;
-    font-size: 1.6rem;
-    margin-bottom: 7rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  width: 90%;
+  justify-items: center;
+  margin: 0 auto;
+  gap: 4rem;
+  font-size: 1.6rem;
+  margin-bottom: 7rem;
 
+  &--project {
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  }
 
-    &-item {
-        background-color: $bg-color-grey;
-        box-shadow: -12px -12px 25px rgba($color-white,1),
-            12px 12px 25px rgba($color-blue-light,0.4);
+  &-item {
+    background-color: $bg-color-grey;
+    box-shadow: -12px -12px 25px rgba($color-white,1),
+        12px 12px 25px rgba($color-blue-light,0.4);
 
-        transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
-        padding: 4rem;
+    padding: 4rem;
 
-        &:hover {
-            transform: scale(1.01);
-        }
-
-        &-title {
-            text-align: center;
-            margin-bottom: 1.5rem;
-            color: darken($color-blue-light, 50);
-        }
-
-        &-about {
-            text-align: center;
-            color: $color-grey;
-        }
-
-        &--imp {
-            transform: scale(1.07);
-
-            @include respond(tab-port-2) {
-                transform: scale(1);
-            }
-
-            &:hover {
-                transform: scale(1.08);
-            }
-        }
-
-        
+    &:hover {
+      transform: scale(1.01);
     }
+
+    &-title {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: darken($color-blue-light, 50);
+    }
+
+    &-about {
+      text-align: center;
+      color: $color-grey;
+    }
+
+    &--imp {
+      transform: scale(1.07);
+
+      @include respond(tab-port-2) {
+        transform: scale(1);
+      }
+
+      &:hover {
+        transform: scale(1.08);
+      }
+    }
+  }
 }

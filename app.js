@@ -29,39 +29,32 @@ $(function () {
   });
 });
 
-if (!localStorage.getItem("theme")) {
-  localStorage.setItem("theme", "light");
-}
+// if (!localStorage.getItem("theme")) {
+//   localStorage.setItem("theme", "light");
+// }
 
-const checkTheme = () => {
-  if (localStorage.getItem("theme") == "dark") {
-    DarkReader.enable({
-      brightness: 100,
-      contrast: 90,
-      sepia: 10,
-    });
+// const checkTheme = () => {
+//   if (localStorage.getItem("theme") == "dark") {
+//     document
+//       .getElementById("white")
+//       .setAttribute("style", "background:white !important");
+//     DarkReader.enable({
+//       brightness: 100,
+//       contrast: 95,
+//       sepia: 10,
+//     });
+//   } else if (localStorage.getItem("theme") == "light") {
+//     document
+//       .getElementById("black")
+//       .setAttribute("style", "background:black !important");
+//     DarkReader.disable();
+//   }
+// };
 
-    document
-      .getElementById("white")
-      .setAttribute("style", "background:white !important");
-  } else if (localStorage.getItem("theme") == "light") {
-    document
-      .getElementById("black")
-      .setAttribute("style", "background:black !important");
-    DarkReader.disable();
-  }
-};
-
-// window.addEventListener("load", checkTheme)
+// window.addEventListener("load", checkTheme);
 
 // $(function () {
 //   $(".toggle--dark").on("click", function () {
-//     DarkReader.enable({
-//       brightness: 100,
-//       contrast: 90,
-//       sepia: 10,
-//     });
-
 //     document
 //       .getElementById("white")
 //       .setAttribute("style", "background:white !important");
@@ -73,40 +66,42 @@ const checkTheme = () => {
 //     // }
 
 //     localStorage.setItem("theme", "dark");
+
+//     DarkReader.enable({
+//       brightness: 100,
+//       contrast: 95,
+//       sepia: 10,
+//     });
 //   });
 // });
 
-$(function () {
-  $(".toggle--light").on("click", function () {
-    DarkReader.disable();
-    localStorage.setItem("theme", "light");
-  });
-});
-
-//dark mode toggle
-// $(function(){
-
-//   $(".toggle--dark").on("click", function(){
-//     document.documentElement.classList.add('dark-mode')
-
-//     document.querySelectorAll('.t-btn').forEach((result) => {
-//       result.classList.add('same')
-//     })
-
-//     document.querySelectorAll('.inverted').forEach((result) => {
-//       result.classList.toggle('invert')
-//     })
+// $(function () {
+//   $(".toggle--light").on("click", function () {
+//     localStorage.setItem("theme", "light");
+//     DarkReader.disable();
 //   });
-
 // });
 
-// $(function(){
+// //dark mode toggle
+// $(function () {
+//   $(".toggle--dark").on("click", function () {
+//     document.documentElement.classList.add("dark-mode");
 
-//   $(".toggle--light").on("click", function(){
-//     document.documentElement.classList.remove('dark-mode')
-//     document.querySelectorAll('.t-btn').forEach((result) => {
-//       result.classList.remove('same')
-//     })
+//     document.querySelectorAll(".t-btn").forEach((result) => {
+//       result.classList.add("same");
+//     });
+
+//     document.querySelectorAll(".inverted").forEach((result) => {
+//       result.classList.toggle("invert");
+//     });
 //   });
+// });
 
+// $(function () {
+//   $(".toggle--light").on("click", function () {
+//     document.documentElement.classList.remove("dark-mode");
+//     document.querySelectorAll(".t-btn").forEach((result) => {
+//       result.classList.remove("same");
+//     });
+//   });
 // });

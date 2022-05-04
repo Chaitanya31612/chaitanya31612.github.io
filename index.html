@@ -1,353 +1,456 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- <link rel="icon" href="img/Cg.ico" type="image/x-icon"> -->
-    <link rel="icon" href="img/cg.png" type="image/x-icon">
+    <link rel="icon" href="img/cg.png" type="image/x-icon" />
     <title>Chaitanya &vert; Portfolio</title>
-</head>
+  </head>
 
-<body onload="checkTheme()">
-
+  <!-- <body onload="checkTheme()"> -->
+  <body>
     <div class="loader">
-        <div class="underline title__underline">
-            <div class="underline--1"></div>
-            <div class="underline--2"></div>
-        </div>
+      <div class="underline title__underline">
+        <div class="underline--1"></div>
+        <div class="underline--2"></div>
+      </div>
     </div>
 
     <div class="container" data-aos="fade-down">
-        <!-- nav -->
-        <div class="nav">
-            <a href="#" class="nav__title">Chaitanya</a>
+      <!-- nav -->
+      <div class="nav">
+        <a href="#" class="nav__title">Chaitanya</a>
 
-            <div class="nav__links">
-                <a href="#home" class="nav__links-item">Home</a>
-                <a href="#about" class="nav__links-item">About</a>
-                <a href="#experience" class="nav__links-item">Experience</a>
-                <a href="#projects" class="nav__links-item">Projects</a>
-                <a href="#contact" class="nav__links-item">Contact</a>
-            </div>
-
-            <div class="nav-mob">
-                <div class="hamburger_wrapper navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-
-                    <div id="js-hamburger" class="hamburger">
-                        <span class="first"></span>
-                        <span class="second"></span>
-                        <span class="third"></span>
-                    </div>
-
-                </div>
-            </div>
+        <div class="nav__links">
+          <a href="#home" class="nav__links-item hide">Home</a>
+          <a href="#about" class="nav__links-item">About</a>
+          <a href="#skills" class="nav__links-item">Skills</a>
+          <a href="#experience" class="nav__links-item">Experience</a>
+          <a href="#projects" class="nav__links-item">Projects</a>
+          <a href="#achievements" class="nav__links-item hide">Achievements</a>
+          <a href="#contact" class="nav__links-item">Contact</a>
         </div>
 
-        <!-- Home -->
-        <div class="home" id="home">
-            <div class="home__top m-b-m">
-                <h1 class="heading-1 heading-1--light">Welcome</h1>
-                <div class="toggle t-btn">
-                    <div class="toggle--dark" id="black"></div>
-                    <div class="toggle--light" id="white"></div>
-                </div>
+        <div class="nav-mob">
+          <div
+            class="hamburger_wrapper navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div id="js-hamburger" class="hamburger">
+              <span class="first"></span>
+              <span class="second"></span>
+              <span class="third"></span>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <div class="home__heading">
-                <div class="home__heading__main">
-                    <div class="heading-3">I am</div>
-                    <div class="home__heading__name">
-                        <span class="home__heading__name-title">Chaitanya <br> Gupta</span>
-                        <div class="underline">
-                            <div class="underline--1"></div>
-                            <div class="underline--2"></div>
-                        </div>
-                    </div>
-                    <div class="heading-3">Full stack web developer</div>
-                </div>
-
-                <svg class="home__heading__svg" id="Component_7_1" data-name="Component 7 – 1"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350"
-                    height="350" viewBox="0 0 444 442">
-                    <defs>
-                        <filter id="Shadow" x="112.5" y="117.5" width="249" height="238" filterUnits="userSpaceOnUse">
-                            <feOffset dx="15" dy="15" input="SourceAlpha" />
-                            <feGaussianBlur stdDeviation="12.5" result="blur" />
-                            <feFlood flood-color="#a5b5f8" flood-opacity="0.502" />
-                            <feComposite operator="in" in2="blur" />
-                            <feComposite in="SourceGraphic" />
-                        </filter>
-                        <filter id="Light" x="82.5" y="87.5" width="249" height="238" filterUnits="userSpaceOnUse">
-                            <feOffset dx="-15" dy="-15" input="SourceAlpha" />
-                            <feGaussianBlur stdDeviation="12.5" result="blur-2" />
-                            <feFlood flood-color="#fff" />
-                            <feComposite operator="in" in2="blur-2" />
-                            <feComposite in="SourceGraphic" />
-                        </filter>
-                        <clipPath id="clip-path">
-                            <rect id="base" width="444" height="442" rx="198" fill="#e6e6e6" />
-                        </clipPath>
-                    </defs>
-                    <g id="up" transform="translate(135 140)">
-                        <g transform="matrix(1, 0, 0, 1, -135, -140)" filter="url(#Shadow)">
-                            <rect id="Shadow-2" data-name="Shadow" width="174" height="163" rx="81.5"
-                                transform="translate(135 140)" fill="#f6f6f6" />
-                        </g>
-                        <g transform="matrix(1, 0, 0, 1, -135, -140)" filter="url(#Light)">
-                            <rect id="Light-2" data-name="Light" width="174" height="163" rx="81.5"
-                                transform="translate(135 140)" fill="#f6f6f6" />
-                        </g>
-                        <rect id="Base-2" data-name="Base" width="174" height="163" rx="81.5" fill="#f6f6f6" />
-                    </g>
-                    <g id="down">
-                        <g id="down-2" data-name="down" clip-path="url(#clip-path)">
-                            <g id="Shadow-3" data-name="Shadow" fill="none" stroke="rgba(165,181,248,0.99)"
-                                stroke-width="5">
-                                <rect width="469" height="545" rx="198" stroke="none" />
-                                <rect x="2.5" y="2.5" width="464" height="540" rx="195.5" fill="none" />
-                            </g>
-                            <g id="Light-3" data-name="Light" transform="translate(-34 -111)" fill="none"
-                                stroke="#fffcfc" stroke-width="5">
-                                <rect width="478" height="553" rx="198" stroke="none" />
-                                <rect x="2.5" y="2.5" width="473" height="548" rx="195.5" fill="none" />
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-                <div class="home__nav">
-                    <a href="#home" class="line-l tooltip"><span class="tooltiptext">Home</span></a>
-                    <a href="#about" class="line-s tooltip"><span class="tooltiptext">About</span></a>
-                    <a href="#skills" class="line-l tooltip"><span class="tooltiptext">Skills</span></a>
-                    <a href="#education" class="line-s tooltip"><span class="tooltiptext">Education</span></a>
-                    <a href="#experience" class="line-l tooltip"><span class="tooltiptext">Experience</span></a>
-                    <a href="#projects" class="line-s tooltip"><span class="tooltiptext">Projects</span></a>
-                    <a href="#contact" class="line-l tooltip"><span class="tooltiptext">Contact</span></a>
-                </div>
-
+      <!-- Home -->
+      <div class="home" id="home">
+        <div class="home__top m-b-m">
+          <h1 class="heading-1 heading-1--light">Welcome</h1>
+          <div class="toggle t-btn">
+            <div class="toggle--dark tooltip" id="black">
+              <span class="tooltiptext tooltiptext--small">Currently not supported.</span>
             </div>
-
-
-            <a href="#about" class="btn-primary know-more">
-                Know More
-            </a>
-
-            <a href="#about" class="learn-more">
-                <span class="learn-more__text">Learn More</span>
-                <svg class="learn-more__svg" xmlns="http://www.w3.org/2000/svg" width="30.244" height="18.622"
-                    viewBox="0 0 38.244 20.622">
-                    <path id="Icon_feather-chevron-down" data-name="Icon feather-chevron-down" d="M9,13.5l17,17,17-17"
-                        transform="translate(-6.879 -11.379)" fill="none" stroke="#787878" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="3" />
-                </svg>
-
-            </a>
+            <div class="toggle--light" id="white"></div>
+          </div>
         </div>
 
-        <!-- About -->
-        <div class="about" id="about">
-            <div class="title">
-                <h1 class="heading-1 heading-1--light">About</h1>
-                <div class="underline title__underline">
-                    <div class="underline--1"></div>
-                    <div class="underline--2"></div>
-                </div>
+        <div class="home__heading">
+          <div class="home__heading__main">
+            <div class="heading-3">I am</div>
+            <div class="home__heading__name">
+              <span class="home__heading__name-title"
+                >Chaitanya <br />
+                Gupta</span
+              >
+              <div class="underline">
+                <div class="underline--1"></div>
+                <div class="underline--2"></div>
+              </div>
             </div>
+            <div class="heading-3">Full stack web developer</div>
+          </div>
 
-            <section class="about__content">
-                <p class="about__text">
-                    My name is Chaitanya Gupta, I am a Full Stack Web Developer, Open Source enthusiast and a Computer
-                    Science student from
-                    India.
-                    <br><br>
-                    I love working on new and exciting technologies emerging nowadays. I have good work experience as a
-                    MERN Stack Developer
-                    in startup(s) where I was core member of the development team and done quite some contribution to
-                    open source as well.
-                </p>
-
-                <div class="about__buttons">
-                    <a href="#skills" class="btn-primary about__buttons-item">
-                        Skills
-                    </a>
-                    <a href="/resume.pdf" class="btn-primary about__buttons-item">
-                        Resume
-                    </a>
-                </div>
-            </section>
+          <svg
+            class="home__heading__svg"
+            id="Component_7_1"
+            data-name="Component 7 – 1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="350"
+            height="350"
+            viewBox="0 0 444 442"
+          >
+            <defs>
+              <filter
+                id="Shadow"
+                x="112.5"
+                y="117.5"
+                width="249"
+                height="238"
+                filterUnits="userSpaceOnUse"
+              >
+                <feOffset dx="15" dy="15" input="SourceAlpha" />
+                <feGaussianBlur stdDeviation="12.5" result="blur" />
+                <feFlood flood-color="#a5b5f8" flood-opacity="0.502" />
+                <feComposite operator="in" in2="blur" />
+                <feComposite in="SourceGraphic" />
+              </filter>
+              <filter
+                id="Light"
+                x="82.5"
+                y="87.5"
+                width="249"
+                height="238"
+                filterUnits="userSpaceOnUse"
+              >
+                <feOffset dx="-15" dy="-15" input="SourceAlpha" />
+                <feGaussianBlur stdDeviation="12.5" result="blur-2" />
+                <feFlood flood-color="#fff" />
+                <feComposite operator="in" in2="blur-2" />
+                <feComposite in="SourceGraphic" />
+              </filter>
+              <clipPath id="clip-path">
+                <rect
+                  id="base"
+                  width="444"
+                  height="442"
+                  rx="198"
+                  fill="#e6e6e6"
+                />
+              </clipPath>
+            </defs>
+            <g id="up" transform="translate(135 140)">
+              <g
+                transform="matrix(1, 0, 0, 1, -135, -140)"
+                filter="url(#Shadow)"
+              >
+                <rect
+                  id="Shadow-2"
+                  data-name="Shadow"
+                  width="174"
+                  height="163"
+                  rx="81.5"
+                  transform="translate(135 140)"
+                  fill="#f6f6f6"
+                />
+              </g>
+              <g
+                transform="matrix(1, 0, 0, 1, -135, -140)"
+                filter="url(#Light)"
+              >
+                <rect
+                  id="Light-2"
+                  data-name="Light"
+                  width="174"
+                  height="163"
+                  rx="81.5"
+                  transform="translate(135 140)"
+                  fill="#f6f6f6"
+                />
+              </g>
+              <rect
+                id="Base-2"
+                data-name="Base"
+                width="174"
+                height="163"
+                rx="81.5"
+                fill="#f6f6f6"
+              />
+            </g>
+            <g id="down">
+              <g id="down-2" data-name="down" clip-path="url(#clip-path)">
+                <g
+                  id="Shadow-3"
+                  data-name="Shadow"
+                  fill="none"
+                  stroke="rgba(165,181,248,0.99)"
+                  stroke-width="5"
+                >
+                  <rect width="469" height="545" rx="198" stroke="none" />
+                  <rect
+                    x="2.5"
+                    y="2.5"
+                    width="464"
+                    height="540"
+                    rx="195.5"
+                    fill="none"
+                  />
+                </g>
+                <g
+                  id="Light-3"
+                  data-name="Light"
+                  transform="translate(-34 -111)"
+                  fill="none"
+                  stroke="#fffcfc"
+                  stroke-width="5"
+                >
+                  <rect width="478" height="553" rx="198" stroke="none" />
+                  <rect
+                    x="2.5"
+                    y="2.5"
+                    width="473"
+                    height="548"
+                    rx="195.5"
+                    fill="none"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+          <div class="home__nav">
+            <a href="#home" class="line-l tooltip"
+              ><span class="tooltiptext">Home</span></a
+            >
+            <a href="#about" class="line-s tooltip"
+              ><span class="tooltiptext">About</span></a
+            >
+            <a href="#skills" class="line-l tooltip"
+              ><span class="tooltiptext">Skills</span></a
+            >
+            <a href="#education" class="line-s tooltip"
+              ><span class="tooltiptext">Education</span></a
+            >
+            <a href="#experience" class="line-l tooltip"
+              ><span class="tooltiptext">Experience</span></a
+            >
+            <a href="#projects" class="line-s tooltip"
+              ><span class="tooltiptext">Projects</span></a
+            >
+            <a href="#achievements" class="line-l tooltip"
+              ><span class="tooltiptext">Achievements</span></a
+            >
+            <a href="#contact" class="line-s tooltip"
+              ><span class="tooltiptext">Contact</span></a
+            >
+          </div>
         </div>
 
+        <a href="#about" class="btn-primary know-more"> Know More </a>
 
-        <!-- Skills -->
-        <div class="skills inverted" id="skills">
-            <div class="title">
-                <h1 class="heading-1 heading-1--dark">Skills</h1>
-                <div class="underline title__underline">
-                    <div class="underline--1"></div>
-                    <div class="underline--2"></div>
-                </div>
-            </div>
+        <a href="#about" class="learn-more">
+          <span class="learn-more__text">Learn More</span>
+          <svg
+            class="learn-more__svg"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30.244"
+            height="18.622"
+            viewBox="0 0 38.244 20.622"
+          >
+            <path
+              id="Icon_feather-chevron-down"
+              data-name="Icon feather-chevron-down"
+              d="M9,13.5l17,17,17-17"
+              transform="translate(-6.879 -11.379)"
+              fill="none"
+              stroke="#787878"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+            />
+          </svg>
+        </a>
+      </div>
 
-
-            <div class="skills-container">
-
-                <div class="core-skills">
-                    <div class="core-skills-item">
-                        <h2 class="core-skills-item-title">
-                            Web Design
-                        </h2>
-                        <p class="core-skills-item-about">
-                            I love designs and it's the first step before creating any website as I can give layout to
-                            my imagination.
-                        </p>
-                    </div>
-
-                    <div class="core-skills-item core-skills-item--imp">
-                        <h2 class="core-skills-item-title">
-                            Web Development
-                        </h2>
-                        <p class="core-skills-item-about">
-                            I am a Full Stack Web Developer (MERN) and have quite some experience in it as well.
-                        </p>
-                    </div>
-
-                    <div class="core-skills-item">
-                        <h2 class="core-skills-item-title">
-                            Problem Solving
-                        </h2>
-                        <p class="core-skills-item-about">
-                            I love solving problems whether programming problems or real life problems.
-                        </p>
-                    </div>
-                </div>
-
-                <center>
-                    <div class="heading-3">Tech I'm familiar with</div>
-                    <hr>
-                </center>
-
-                <div class="skills__list">
-                    <div>HTML5</div>
-                    <div>CSS3</div>
-                    <div>SASS</div>
-                    <div>Bootstrap</div>
-                    <div>Javascript</div>
-                    <div>jQuery</div>
-                    <!-- <div>jQuery UI</div> -->
-                    <div>React.js</div>
-                    <div>Redux</div>
-                    <div>Jest</div>
-                    <div>Webpack</div>
-                    <div>Node.js</div>
-                    <div>Express.js</div>
-                    <div>MongoDB</div>
-                    <div>Firebase</div>
-                    <div>Java</div>
-                    <div>C</div>
-                    <div>Python</div>
-                    <div>Git</div>
-                    <!-- <div>Heroku</div> -->
-                    <div>MySQL</div>
-                    <div>Adobe XD</div>
-
-                </div>
-            </div>
-
+      <!-- About -->
+      <div class="about" id="about">
+        <div class="title">
+          <h1 class="heading-1 heading-1--light">About</h1>
+          <div class="underline title__underline">
+            <div class="underline--1"></div>
+            <div class="underline--2"></div>
+          </div>
         </div>
 
-        <!-- Education -->
-        <div class="education" id="education">
-            <div class="title">
-                <h1 class="heading-1 heading-1--light heading-1--m">Education</h1>
-                <div class="underline title__underline">
-                    <div class="underline--1"></div>
-                    <div class="underline--2"></div>
-                </div>
+        <div class="about__container">
+          <div class="about__content">
+            <p class="about__text">
+              My name is Chaitanya Gupta, I am a Full Stack Web Developer, Open
+              Source enthusiast and a Computer Science student from India.
+              <br /><br />
+              I love working on new and exciting technologies emerging nowadays. I
+              have good work experience as a MERN Stack Developer in startup(s)
+              where I was core member of the development team and done quite some
+              contribution to open source as well.
+            </p>
+
+            <div class="about__buttons">
+              <a href="#skills" class="btn-primary about__buttons-item">
+                Skills
+              </a>
+              <a target="_blank" href="/resume.pdf" class="btn-primary about__buttons-item">
+                Resume
+              </a>
             </div>
-
-            <section class="content-container">
-                <!-- item -->
-                <div class="content-list">
-                    <h1 class="content-list__title">
-                        Bachelor's Degree in Computer Science & Engineering
-                    </h1>
-                    <h5 class="content-list__name">
-                        Deenbandhu Chhotu Ram University Of Science And Technology
-                    </h5>
-                    <div class="content-list__date">
-                        2019 - 2023
-                    </div>
-                </div>
-
-                <div class="content-list">
-                    <h1 class="content-list__title">
-                        High School, Central Board of Secondary Education
-                    </h1>
-                    <h5 class="content-list__name">
-                        Scored 95.6% in PCM (Non-Medical) with Informatics Practices
-                    </h5>
-                    <div class="content-list__date">
-                        2019
-                    </div>
-                </div>
-
-                <div class="content-list">
-                    <h1 class="content-list__title">
-                        Secondary School, Central Board of Secondary Education
-                    </h1>
-                    <h5 class="content-list__name">
-                        Scored 10 CGPA
-                    </h5>
-                    <div class="content-list__date">
-                        2017
-                    </div>
-                </div>
-            </section>
-
+          </div>
+          <img src="./img/mainprofilephoto.png" alt="" class="about__image" />
         </div>
 
+      </div>
 
-        <!-- Experience -->
-        <div class="experience inverted" id="experience">
-            <div class="title">
-                <h1 class="heading-1 heading-1--dark heading-1--m">Experience</h1>
-                <div class="underline title__underline">
-                    <div class="underline--1"></div>
-                    <div class="underline--2"></div>
-                </div>
+      <!-- Skills -->
+      <div class="skills inverted" id="skills">
+        <div class="title">
+          <h1 class="heading-1 heading-1--dark">Skills</h1>
+          <div class="underline title__underline">
+            <div class="underline--1"></div>
+            <div class="underline--2"></div>
+          </div>
+        </div>
+
+        <div class="skills-container">
+          <div class="core-skills">
+            <div class="core-skills-item light-shadow">
+              <h2 class="core-skills-item-title">Web Design</h2>
+              <p class="core-skills-item-about">
+                I love designs and it's the first step before creating any
+                website as I can give layout to my imagination.
+              </p>
             </div>
 
-            <section class="content-container">
-                <!-- item -->
-                <div class="content-list">
-                    <h1 class="content-list__title">
-                        Full Stack Web Developer
-                    </h1>
-                    <h5 class="content-list__name">
-                        <a target="_blank" href="https://www.myways.in/" class="content-list__name-link">MyWays</a> -
-                        Internship
-                    </h5>
-                    <div class="content-list__about">
-                        I worked as a Full Stack Developer in MERN Stack with MyWays. I managed both frontend and
-                        backend part of the codebase along with deployment, testing related work and documentation
-                        as well. I had also managed the whole team for some time there.
-                    </div>
-                    <div class="content-list__date">
-                        July 2020 - October 2020
-                    </div>
+            <div class="core-skills-item core-skills-item--imp">
+              <h2 class="core-skills-item-title">Web Development</h2>
+              <p class="core-skills-item-about">
+                I am a Full Stack Web Developer (MERN) and have quite some
+                experience in it as well.
+              </p>
+            </div>
 
-                </div>
+            <div class="core-skills-item light-shadow">
+              <h2 class="core-skills-item-title">Problem Solving</h2>
+              <p class="core-skills-item-about">
+                I love solving problems whether programming problems or real
+                life problems.
+              </p>
+            </div>
+          </div>
 
-                <!-- <div class="content-list">
+          <center>
+            <div class="heading-3">Tech I'm familiar with</div>
+            <hr />
+          </center>
+
+          <div class="skills__list">
+            <div>HTML5</div>
+            <div>CSS3</div>
+            <div>SASS</div>
+            <div>Bootstrap</div>
+            <div>Javascript</div>
+            <div>jQuery</div>
+            <!-- <div>jQuery UI</div> -->
+            <div>React.js</div>
+            <div>Redux</div>
+            <div>Jest</div>
+            <div>Webpack</div>
+            <div>Node.js</div>
+            <div>Express.js</div>
+            <div>MongoDB</div>
+            <div>Firebase</div>
+            <div>Java</div>
+            <div>C</div>
+            <div>Python</div>
+            <div>Git</div>
+            <!-- <div>Heroku</div> -->
+            <div>MySQL</div>
+            <div>Adobe XD</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="education" id="education">
+        <div class="title">
+          <h1 class="heading-1 heading-1--light heading-1--m">Education</h1>
+          <div class="underline title__underline">
+            <div class="underline--1"></div>
+            <div class="underline--2"></div>
+          </div>
+        </div>
+
+        <section class="content-container">
+          <!-- item -->
+          <div class="content-list">
+            <h1 class="content-list__title">
+              Bachelor's Degree in Computer Science & Engineering
+            </h1>
+            <h5 class="content-list__name">
+              Deenbandhu Chhotu Ram University Of Science And Technology
+            </h5>
+            <h5 class="content-list__name">Specialization - Blockchain</h5>
+            <div class="content-list__date">2019 - 2023</div>
+          </div>
+
+          <div class="content-list">
+            <h1 class="content-list__title">
+              High School, Central Board of Secondary Education
+            </h1>
+            <h5 class="content-list__name">
+              Scored 95.6% in PCM (Non-Medical) with Informatics Practices
+            </h5>
+            <div class="content-list__date">2019</div>
+          </div>
+
+          <div class="content-list">
+            <h1 class="content-list__title">
+              Secondary School, Central Board of Secondary Education
+            </h1>
+            <h5 class="content-list__name">Scored 10 CGPA</h5>
+            <div class="content-list__date">2017</div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Experience -->
+      <div class="experience inverted" id="experience">
+        <div class="title">
+          <h1 class="heading-1 heading-1--dark heading-1--m">Experience</h1>
+          <div class="underline title__underline">
+            <div class="underline--1"></div>
+            <div class="underline--2"></div>
+          </div>
+        </div>
+
+        <section class="content-container">
+          <!-- item -->
+          <div class="content-list">
+            <h1 class="content-list__title">Full Stack Web Developer</h1>
+            <h5 class="content-list__name">
+              <a
+                target="_blank"
+                href="https://www.myways.in/"
+                class="content-list__name-link"
+                >MyWays</a
+              >
+              - Internship
+            </h5>
+            <div class="content-list__about">
+              I worked as a Full Stack Developer in MERN Stack with MyWays. I
+              managed both frontend and backend part of the codebase along with
+              deployment, testing related work and documentation as well. I had
+              also managed the whole team for some time there.
+            </div>
+            <div class="content-list__date">July 2020 - October 2020</div>
+          </div>
+
+          <!-- <div class="content-list">
                     <h1 class="content-list__title">
                         Girlscript Summer of Code, Participant
                     </h1>
@@ -363,330 +466,752 @@
                 
                 </div> -->
 
-                <div class="content-list">
-                    <h1 class="content-list__title">
-                        Script Winter of Code, Participant
-                    </h1>
-                    <h5 class="content-list__name">
-                        <a target="_blank" href="http://swoc.tech/" class="content-list__name-link">SWOC</a> - Open
-                        Source Program
-                    </h5>
-                    <div class="content-list__about">
-                        I have contributed to various open source projects under Script Winter of Code and it's an
-                        amazing experience and I got to learn many things on the way along with contributions.
-                    </div>
-                    <div class="content-list__date">
-                        December 2020 - February 2021
-                    </div>
+          <div class="content-list">
+            <h1 class="content-list__title">
+              Script Winter of Code, Participant
+            </h1>
+            <h5 class="content-list__name">
+              <a
+                target="_blank"
+                href="http://swoc.tech/"
+                class="content-list__name-link"
+                >SWOC</a
+              >
+              - Open Source Program
+            </h5>
+            <div class="content-list__about">
+              I have contributed to various open source projects under Script
+              Winter of Code and it's an amazing experience and I got to learn
+              many things on the way along with contributions.
+            </div>
+            <div class="content-list__date">December 2020 - February 2021</div>
+          </div>
 
+          <div class="content-list">
+            <h1 class="content-list__title">
+              NJACK Winter of Code, Participant
+            </h1>
+            <h5 class="content-list__name">
+              <a
+                target="_blank"
+                href="https://njackwinterofcode.github.io/"
+                class="content-list__name-link"
+                >NWOC</a
+              >
+              - Open Source Program
+            </h5>
+            <div class="content-list__about">
+              It was really a great experience with NJACK Winter of Code in
+              which I participated as a student. I got to know about open source
+              and contributed to various amazing projects and learned a lot. It
+              was really fun contributing to those projects. I got #13 rank out
+              of more than 1.2k participants.
+            </div>
+            <div class="content-list__date">December 2020 - January 2021</div>
+          </div>
+        </section>
+
+
+
+
+        <!-- Projects -->
+        <section class="projects" id="projects">
+          <div class="title">
+            <h1 class="heading-1 heading-1--light heading-1--m">Projects</h1>
+            <div class="underline title__underline">
+              <div class="underline--1"></div>
+              <div class="underline--2"></div>
+            </div>
+          </div>
+
+          <div class="project-container">
+            <br />
+            <center>
+              <div class="heading-3">My Projects</div>
+            </center>
+            <br /><br />
+            <div class="core-skills core-skills--project">
+
+              <div class="core-skills-item light-shadow">
+                <h2 class="core-skills-item-title">DoctorzBook</h2>
+                <p class="core-skills-item-about">
+                  DoctorzBook is a real-time appointments booking application where user can book appointments with doctors from the convenience of their homes. This application provides user with a very intuitive user experience and try to make appointments process as easy as it can get.
+                </p>
+
+                <div class="project-tags">
+                  <div class="tagbutton">
+                    <span>React.js</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Redux</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Node.js</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Express.js</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>MongoDB</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Figma/AdobeXd</span>
+                  </div>
                 </div>
 
-                <div class="content-list">
-                    <h1 class="content-list__title">
-                        NJACK Winter of Code, Participant
-                    </h1>
-                    <h5 class="content-list__name">
-                        <a target="_blank" href="https://njackwinterofcode.github.io/"
-                            class="content-list__name-link">NWOC</a> - Open Source Program
-                    </h5>
-                    <div class="content-list__about">
-                        It was really a great experience with NJACK Winter of Code in which I participated as a student.
-                        I got to know about
-                        open source and contributed to various amazing projects and learned a lot. It was really fun
-                        contributing to those
-                        projects. I got #13 rank out of more than 1.2k participants.
-                    </div>
-                    <div class="content-list__date">
-                        December 2020 - January 2021
-                    </div>
-
+                <div class="project-links">
+                  <ul class="menu-content">
+                    <li>
+                      <a
+                        target="_blank"
+                        href="http://doctorzbook.netlify.app/"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-monitor"
+                        >
+                          <rect
+                            x="2"
+                            y="3"
+                            width="20"
+                            height="14"
+                            rx="2"
+                            ry="2"
+                          ></rect>
+                          <line x1="8" y1="21" x2="16" y2="21"></line>
+                          <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://github.com/Chaitanya31612/DoctorzBook"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-github"
+                        >
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-            </section>
+              </div>
 
-            <!-- Projects -->
-            <section class="projects" id="projects">
-                <div class="title">
-                    <h1 class="heading-1 heading-1--light heading-1--m">Projects</h1>
-                    <div class="underline title__underline">
-                        <div class="underline--1"></div>
-                        <div class="underline--2"></div>
-                    </div>
+              <!-- <div class="core-skills-item light-shadow">
+                <h2 class="core-skills-item-title">Realtime Booking App</h2>
+                <p class="core-skills-item-about">
+                  This is a realtime update system working on MERN Stack. This
+                  is a booking system in which time slots are shown based on
+                  their availability. When a user book a time slot it is
+                  disabled.
+                </p>
+
+                <div class="project-tags">
+                  <div class="tagbutton">
+                    <span>React.js</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Node.js</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Express.js</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>MongoDB</span>
+                  </div>
                 </div>
 
-                <div class="project-container">
-                    <br>
-                    <center>
-                        <div class="heading-3">My Projects</div>
-                    </center><br><br>
-                    <div class="core-skills">
+                <div class="project-links">
+                  <ul class="menu-content">
+                    <li>
+                      <a
+                        target="_blank"
+                        href="http://chaitanya-realtime.herokuapp.com"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-monitor"
+                        >
+                          <rect
+                            x="2"
+                            y="3"
+                            width="20"
+                            height="14"
+                            rx="2"
+                            ry="2"
+                          ></rect>
+                          <line x1="8" y1="21" x2="16" y2="21"></line>
+                          <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://github.com/Chaitanya31612/RealtimeSystem"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-github"
+                        >
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div> -->
 
-                        <div class="core-skills-item">
-                            <h2 class="core-skills-item-title">
-                                Realtime Booking App
-                            </h2>
-                            <p class="core-skills-item-about">
-                                This is a realtime update system working on MERN Stack. This is a booking system in
-                                which time slots are shown based on
-                                their availability. When a user book a time slot it is disabled.
-                            </p>
+              
 
-                            <div class="project-tags">
-                                <div class="tagbutton">
-                                    <span>React.js</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>Node.js</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>Express.js</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>MongoDB</span>
-                                </div>
-                            </div>
+              <div class="core-skills-item light-shadow">
+                <h2 class="core-skills-item-title">
+                  Admin Panel Project
+                </h2>
+                <p class="core-skills-item-about">
+                  Admin Panel is a project that I made to make a fully dynamic and responsive web application. Through it's landing page users can see usefull links, subjects, topics and videos related to subtopics. All of this can be created, edited, deleted and viewed by the admin.
+                  This project performs all 4 CRUD operations and is made using MERN Stack and design is made on Figma.
+                </p>
 
-                            <div class="project-links">
-                                <ul class="menu-content">
-                                    <li><a target="_blank" href="http://chaitanya-realtime.herokuapp.com"
-                                            class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="25" viewBox="0 0 30 28" fill="none" stroke="#111"
-                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-monitor">
-                                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li><a target="_blank" href="https://github.com/Chaitanya31612/RealtimeSystem"
-                                            class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="25" viewBox="0 0 30 28" fill="none" stroke="#111"
-                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-github">
-                                                <path
-                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                <div class="project-tags">
+                  <div class="tagbutton">
+                    <span>React.js</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Redux</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Node.js</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Express.js</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>MongoDB</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Figma/AdobeXd</span>
+                  </div>
+                </div>
 
-                        <div class="core-skills-item">
-                            <h2 class="core-skills-item-title">
-                                Portfolio Website Template
-                            </h2>
-                            <p class="core-skills-item-about">
-                                This is a portfolio website template made for people who want to have a simple and
-                                modern-looking website for them.
-                                This projects is made completely using HTML, CSS, Sass and Javascript.
-                            </p>
+                <div class="project-links">
+                  <ul class="menu-content">
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://chaitanyaadmin.netlify.app/"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-monitor"
+                        >
+                          <rect
+                            x="2"
+                            y="3"
+                            width="20"
+                            height="14"
+                            rx="2"
+                            ry="2"
+                          ></rect>
+                          <line x1="8" y1="21" x2="16" y2="21"></line>
+                          <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://github.com/Chaitanya31612/admin-client"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-github"
+                        >
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-                            <div class="project-tags">
-                                <div class="tagbutton">
-                                    <span>HTML</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>CSS</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>SASS</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>Javascript</span>
-                                </div>
-                            </div>
 
-                            <div class="project-links">
-                                <ul class="menu-content">
-                                    <li><a target="_blank"
-                                            href="https://chaitanya31612.github.io/portfolio-site-template"
-                                            class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="25" viewBox="0 0 30 28" fill="none" stroke="#111"
-                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-monitor">
-                                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li><a target="_blank"
-                                            href="https://github.com/Chaitanya31612/portfolio-site-template"
-                                            class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="25" viewBox="0 0 30 28" fill="none" stroke="#111"
-                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-github">
-                                                <path
-                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+              <div class="core-skills-item light-shadow">
+                <h2 class="core-skills-item-title">Chat Application</h2>
+                <p class="core-skills-item-about">
+                  This is a Node JS application made using socket.io. It has
+                  authentication using a room name and a unique display name.
+                  Also, profanity is not allowed in the application. An
+                  additional feature of sending location is also available.
+                </p>
 
-                        <div class="core-skills-item">
-                            <h2 class="core-skills-item-title">
-                                Chat Application
-                            </h2>
-                            <p class="core-skills-item-about">
-                                This is a Node JS application made using socket.io. It has authentication using a room
-                                name and a unique display name.
-                                Also, profanity is not allowed in the application. An additional feature of sending
-                                location is also available.
-                            </p>
+                <div class="project-tags">
+                  <div class="tagbutton">
+                    <span>HTML</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>CSS</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Node.js</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Socket.io</span>
+                  </div>
+                </div>
 
-                            <div class="project-tags">
-                                <div class="tagbutton">
-                                    <span>HTML</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>CSS</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>Node.js</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>Socket.io</span>
-                                </div>
-                            </div>
+                <div class="project-links">
+                  <ul class="menu-content">
+                    <li>
+                      <a
+                        target="_blank"
+                        href="http://chaitanya-chat-app.herokuapp.com/"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-monitor"
+                        >
+                          <rect
+                            x="2"
+                            y="3"
+                            width="20"
+                            height="14"
+                            rx="2"
+                            ry="2"
+                          ></rect>
+                          <line x1="8" y1="21" x2="16" y2="21"></line>
+                          <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://github.com/Chaitanya31612/Chat-App"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-github"
+                        >
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-                            <div class="project-links">
-                                <ul class="menu-content">
-                                    <li><a target="_blank" href="http://chaitanya-chat-app.herokuapp.com/"
-                                            class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="25" viewBox="0 0 30 28" fill="none" stroke="#111"
-                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-monitor">
-                                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li><a target="_blank" href="https://github.com/Chaitanya31612/Chat-App"
-                                            class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="25" viewBox="0 0 30 28" fill="none" stroke="#111"
-                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-github">
-                                                <path
-                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+              <div class="core-skills-item light-shadow">
+                <h2 class="core-skills-item-title">
+                  Amazon Clone Application
+                </h2>
+                <p class="core-skills-item-about">
+                  Designed and Developed Amazon Clone application using Next.js.
+                  It has got look and feel of amazon with all the features like authentication with google, dynamic cart, payment gateway through stripe and much more.
+                </p>
 
-                        <div class="core-skills-item">
-                            <h2 class="core-skills-item-title">
-                                Google Clone
-                            </h2>
-                            <p class="core-skills-item-about">
-                                Made Google clone with all search functionality like google search, feeling lucky button
-                                takes to the first link, image
-                                search and advanced google search
-                            </p>
+                <div class="project-tags">
+                  <div class="tagbutton">
+                    <span>React.js</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Next.js</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Tailwind css</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Stripe API</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Fakestore API</span>
+                  </div>
+                </div>
 
-                            <div class="project-tags">
-                                <div class="tagbutton">
-                                    <span>HTML</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>CSS</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>SASS</span>
-                                </div>
-                            </div>
+                <div class="project-links">
+                  <ul class="menu-content">
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://amazon-clone-chaitanya31612.vercel.app/"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-monitor"
+                        >
+                          <rect
+                            x="2"
+                            y="3"
+                            width="20"
+                            height="14"
+                            rx="2"
+                            ry="2"
+                          ></rect>
+                          <line x1="8" y1="21" x2="16" y2="21"></line>
+                          <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://github.com/Chaitanya31612/Amazon-Clone"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-github"
+                        >
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-                            <div class="project-links">
-                                <ul class="menu-content">
-                                    <li><a target="_blank"
-                                            href="https://chaitanya31612.github.io/google-html-css/index.html"
-                                            class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="25" viewBox="0 0 30 28" fill="none" stroke="#111"
-                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-monitor">
-                                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li><a target="_blank" href="https://github.com/Chaitanya31612/google-html-css"
-                                            class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="25" viewBox="0 0 30 28" fill="none" stroke="#111"
-                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-github">
-                                                <path
-                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
 
-                        <div class="core-skills-item">
-                            <h2 class="core-skills-item-title">
-                                Budget Tracking App
-                            </h2>
-                            <p class="core-skills-item-about">
-                                A React JS application with all the required features such as authentication with google
-                                using the Firebase database and more.
-                                Manages expenses with particular dates and gives a nice looking summary of expenses.
-                            </p>
+              <div class="core-skills-item light-shadow">
+                <h2 class="core-skills-item-title">
+                  Portfolio Website Template
+                </h2>
+                <p class="core-skills-item-about">
+                  This is a portfolio website template made for people who want
+                  to have a simple and modern-looking website for them. This
+                  projects is made completely using HTML, CSS, Sass and
+                  Javascript.
+                </p>
 
-                            <div class="project-tags">
-                                <div class="tagbutton">
-                                    <span>HTML</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>CSS</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>React.js</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>Firebase</span>
-                                </div>
-                            </div>
+                <div class="project-tags">
+                  <div class="tagbutton">
+                    <span>HTML</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>CSS</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>SASS</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Javascript</span>
+                  </div>
+                </div>
 
-                            <div class="project-links">
-                                <ul class="menu-content">
-                                    <li><a target="_blank" href="https://chaitanya-expensify.herokuapp.com/"
-                                            class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="25" viewBox="0 0 30 28" fill="none" stroke="#111"
-                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-monitor">
-                                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li><a target="_blank" href="https://github.com/Chaitanya31612/budget-app"
-                                            class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="25" viewBox="0 0 30 28" fill="none" stroke="#111"
-                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-github">
-                                                <path
-                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                <div class="project-links">
+                  <ul class="menu-content">
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://chaitanya31612.github.io/portfolio-site-template"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-monitor"
+                        >
+                          <rect
+                            x="2"
+                            y="3"
+                            width="20"
+                            height="14"
+                            rx="2"
+                            ry="2"
+                          ></rect>
+                          <line x1="8" y1="21" x2="16" y2="21"></line>
+                          <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://github.com/Chaitanya31612/portfolio-site-template"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-github"
+                        >
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-                        <!-- <div class="core-skills-item">
+
+              <div class="core-skills-item light-shadow">
+                <h2 class="core-skills-item-title">Google Clone</h2>
+                <p class="core-skills-item-about">
+                  Made Google clone with all search functionality like google
+                  search, feeling lucky button takes to the first link, image
+                  search and advanced google search
+                </p>
+
+                <div class="project-tags">
+                  <div class="tagbutton">
+                    <span>HTML</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>CSS</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>SASS</span>
+                  </div>
+                </div>
+
+                <div class="project-links">
+                  <ul class="menu-content">
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://chaitanya31612.github.io/google-html-css/index.html"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-monitor"
+                        >
+                          <rect
+                            x="2"
+                            y="3"
+                            width="20"
+                            height="14"
+                            rx="2"
+                            ry="2"
+                          ></rect>
+                          <line x1="8" y1="21" x2="16" y2="21"></line>
+                          <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://github.com/Chaitanya31612/google-html-css"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-github"
+                        >
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="core-skills-item light-shadow">
+                <h2 class="core-skills-item-title">Budget Tracking App</h2>
+                <p class="core-skills-item-about">
+                  A React JS application with all the required features such as
+                  authentication with google using the Firebase database and
+                  more. Manages expenses with particular dates and gives a nice
+                  looking summary of expenses.
+                </p>
+
+                <div class="project-tags">
+                  <div class="tagbutton">
+                    <span>HTML</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>CSS</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>React.js</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Firebase</span>
+                  </div>
+                </div>
+
+                <div class="project-links">
+                  <ul class="menu-content">
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://chaitanya-expensify.herokuapp.com/"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-monitor"
+                        >
+                          <rect
+                            x="2"
+                            y="3"
+                            width="20"
+                            height="14"
+                            rx="2"
+                            ry="2"
+                          ></rect>
+                          <line x1="8" y1="21" x2="16" y2="21"></line>
+                          <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://github.com/Chaitanya31612/budget-app"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-github"
+                        >
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- <div class="core-skills-item light-shadow">
                             <h2 class="core-skills-item-title">
                                 Weather App
                             </h2>
@@ -727,263 +1252,414 @@
                             </div>
                         </div> -->
 
+              <div class="core-skills-item light-shadow">
+                <h2 class="core-skills-item-title">Furniture Shop Site</h2>
+                <p class="core-skills-item-about">
+                  This is a Furniture shop website made using React.js and it is
+                  fully responsive as well as has multiple pages for products,
+                  page for each product, gallery. It is simple and elegant
+                  looking website.
+                </p>
 
-                        <div class="core-skills-item">
-                            <h2 class="core-skills-item-title">
-                                Furniture Shop Site
-                            </h2>
-                            <p class="core-skills-item-about">
-                                This is a Furniture shop website made using React.js and it is fully responsive as well
-                                as has multiple pages for products, page for each product, gallery. It is simple and
-                                elegant looking website.
-                            </p>
+                <div class="project-tags">
+                  <div class="tagbutton">
+                    <span>HTML</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>CSS</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>React.js</span>
+                  </div>
+                </div>
 
-                            <div class="project-tags">
-                                <div class="tagbutton">
-                                    <span>HTML</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>CSS</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>React.js</span>
-                                </div>
-                            </div>
+                <div class="project-links">
+                  <ul class="menu-content">
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://furniture-shop-site.netlify.app/"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-monitor"
+                        >
+                          <rect
+                            x="2"
+                            y="3"
+                            width="20"
+                            height="14"
+                            rx="2"
+                            ry="2"
+                          ></rect>
+                          <line x1="8" y1="21" x2="16" y2="21"></line>
+                          <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://github.com/Chaitanya31612/furniture-shop"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-github"
+                        >
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-                            <div class="project-links">
-                                <ul class="menu-content">
-                                    <li><a target="_blank" href="https://furniture-shop-site.netlify.app/"
-                                            class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="25" viewBox="0 0 30 28" fill="none" stroke="#111"
-                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-monitor">
-                                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li><a target="_blank" href="https://github.com/Chaitanya31612/furniture-shop"
-                                            class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="25" viewBox="0 0 30 28" fill="none" stroke="#111"
-                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-github">
-                                                <path
-                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+            <!-- open source projects -->
+            <br />
+            <center>
+              <div class="heading-3">Open Source Projects</div>
+            </center>
+            <br /><br />
 
-                    </div>
+            <div class="core-skills">
+              <div class="core-skills-item light-shadow">
+                <h2 class="core-skills-item-title">
+                  Awesome Portfolio Websites
+                </h2>
+                <p class="core-skills-item-about">
+                  This is an open-source project aimed at providing a
+                  full-fledged template that anyone can use to build and put out
+                  their website within an hour! I am a top contributor for this
+                  project.
+                </p>
 
-                    <!-- open source projects -->
-                    <br>
-                    <center>
-                        <div class="heading-3">Open Source Projects</div>
-                    </center><br><br>
+                <div class="project-tags">
+                  <div class="tagbutton">
+                    <span>HTML</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>CSS</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Javascript</span>
+                  </div>
+                </div>
 
-                    <div class="core-skills">
-
-                        <div class="core-skills-item">
-                            <h2 class="core-skills-item-title">
-                                Awesome Portfolio Websites
-                            </h2>
-                            <p class="core-skills-item-about">
-                                This is an open-source project aimed at providing a full-fledged template that anyone
-                                can use to build and put out their website
-                                within an hour!
-                                I am a top contributor for this project.
-                            </p>
-
-                            <div class="project-tags">
-                                <div class="tagbutton">
-                                    <span>HTML</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>CSS</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>Javascript</span>
-                                </div>
-                            </div>
-
-                            <div class="project-links">
-                                <ul class="menu-content">
-                                    <!-- <li><a target="_blank" href="https://furniture-shop-site.netlify.app/" class="social-icon">
+                <div class="project-links">
+                  <ul class="menu-content">
+                    <!-- <li><a target="_blank" href="https://furniture-shop-site.netlify.app/" class="social-icon">
                                             <img src="img/iconfinder_git-pull-request_298789.png" alt="">
                                             <img src="img/6752133251543238893-128.png" alt="">
                                         </a>
                                     </li> -->
-                                    <li><a target="_blank"
-                                            href="https://github.com/smaranjitghose/awesome-portfolio-websites"
-                                            class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="25" viewBox="0 0 30 28" fill="none" stroke="#111"
-                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-github">
-                                                <path
-                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="core-skills-item">
-                            <h2 class="core-skills-item-title">
-                                Doc2Pen
-                            </h2>
-                            <p class="core-skills-item-about">
-                                Doc2pen is an Open Source Software that converts your Typed Docs into Handwritten Docs.
-                                I have contributed to this project and several others during Script winter of code.
-                            </p>
-
-                            <div class="project-tags">
-                                <div class="tagbutton">
-                                    <span>HTML</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>CSS</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>Javascript</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>React.js</span>
-                                </div>
-                            </div>
-
-                            <div class="project-links">
-                                <ul class="menu-content">
-                                    <li><a target="_blank" href="https://github.com/smaranjitghose/doc2pen"
-                                            class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="25" viewBox="0 0 30 28" fill="none" stroke="#111"
-                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-github">
-                                                <path
-                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="core-skills-item">
-                            <h2 class="core-skills-item-title">
-                                CRM
-                            </h2>
-                            <p class="core-skills-item-about">
-                                Customer relations management tool built in MERN stack
-                                I have contributed to this project and several others during NJACK Winter of code.
-                            </p>
-
-                            <div class="project-tags">
-                                <div class="tagbutton">
-                                    <span>React.js</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>Node.js</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>Express.js</span>
-                                </div>
-                                <div class="tagbutton">
-                                    <span>MongoDB</span>
-                                </div>
-                            </div>
-
-                            <div class="project-links">
-                                <ul class="menu-content">
-                                    <li><a target="_blank" href="https://github.com/shelcia/CRM"
-                                            class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                                height="25" viewBox="0 0 30 28" fill="none" stroke="#111"
-                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-github">
-                                                <path
-                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a target="_blank" href="https://github.com/Chaitanya31612?tab=repositories"
-                        class="btn-primary btn-primary--center">
-                        View all Projects
-                    </a>
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://github.com/smaranjitghose/awesome-portfolio-websites"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-github"
+                        >
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-            </section>
+              </div>
 
-            <!-- contact -->
-            <section class="contact" id="contact">
-                <div class="title">
-                    <h1 class="heading-1 heading-1--light heading-1--contact">Contact</h1>
-                    <hr>
+              <div class="core-skills-item light-shadow">
+                <h2 class="core-skills-item-title">Doc2Pen</h2>
+                <p class="core-skills-item-about">
+                  Doc2pen is an Open Source Software that converts your Typed
+                  Docs into Handwritten Docs. I have contributed to this project
+                  and several others during Script winter of code.
+                </p>
+
+                <div class="project-tags">
+                  <div class="tagbutton">
+                    <span>HTML</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>CSS</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Javascript</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>React.js</span>
+                  </div>
                 </div>
 
-                <div class="contact-container inverted">
-                    <p class="contact-container__text inverted">
-                        <span class="contact-container__text--1">Let's Connect</span>
-                        <span class="contact-container__text--2">Digitally</span>
-                    </p>
-
-                    <div class="contact-container__links inverted">
-                        <a target="_blank" href="mailto:justcode31@gmail.com"
-                            class="contact-container__links-item">Email</a>
-                        <a target="_blank" href="https://github.com/Chaitanya31612"
-                            class="contact-container__links-item">GitHub</a>
-                        <a target="_blank" href="https://www.linkedin.com/in/guptachaitanya/"
-                            class="contact-container__links-item">LinkedIn</a>
-                        <a target="_blank" href="https://medium.com/@guptachaitanya31"
-                            class="contact-container__links-item">Medium</a>
-                        <a target="_blank" href="https://twitter.com/Chaitan33456747"
-                            class="contact-container__links-item">Twitter</a>
-                    </div>
+                <div class="project-links">
+                  <ul class="menu-content">
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://github.com/smaranjitghose/doc2pen"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-github"
+                        >
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-            </section>
+              </div>
 
+              <div class="core-skills-item light-shadow">
+                <h2 class="core-skills-item-title">CRM</h2>
+                <p class="core-skills-item-about">
+                  Customer relations management tool built in MERN stack I have
+                  contributed to this project and several others during NJACK
+                  Winter of code.
+                </p>
+
+                <div class="project-tags">
+                  <div class="tagbutton">
+                    <span>React.js</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Node.js</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>Express.js</span>
+                  </div>
+                  <div class="tagbutton">
+                    <span>MongoDB</span>
+                  </div>
+                </div>
+
+                <div class="project-links">
+                  <ul class="menu-content">
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://github.com/shelcia/CRM"
+                        class="social-icon"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="25"
+                          viewBox="0 0 30 28"
+                          fill="none"
+                          stroke="#111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-github"
+                        >
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <a
+              target="_blank"
+              href="https://github.com/Chaitanya31612?tab=repositories"
+              class="btn-primary btn-primary--center"
+            >
+              View all Projects
+            </a>
+          </div>
+        </section>
+
+
+        <!-- Achievements -->
+      <div class="experience inverted" id="achievements">
+        <div class="title">
+          <h1 class="heading-1 heading-1--dark heading-1--m">Achievements</h1>
+          <div class="underline title__underline">
+            <div class="underline--1"></div>
+            <div class="underline--2"></div>
+          </div>
         </div>
 
+        <section class="content-container">
+          <!-- item -->
+          <div class="content-list">
+            <h1 class="content-list__title">Innovate to elevate (First Position)</h1>
+            <h5 class="content-list__name">
+              <span
+                class="content-list__name-link"
+                >Hindu College of Engineering</span>
+              - First Position
+            </h5>
+            <div class="content-list__about">
+              I along with my team have represented our Medical Diagnosis application in Innovate to elevate competition which was held at Hindu College of Engineering, Sonipat. We secured the first position in that competition and received price money as well.
+            </div>
+            <div class="content-list__date">March 2022</div>
+          </div>
+
+          <div class="content-list">
+            <h1 class="content-list__title">
+              Student Excellence and Learning Program (SELP)
+            </h1>
+            <h5 class="content-list__name">
+              <span
+                class="content-list__name-link"
+                >TEQIP-III</span>
+              - Learning Camp
+            </h5>
+            <div class="content-list__about">
+              This camp held at my university and implementation of knowledge and practice of the techniques taught in this program builds learning capacity, enhances creativity and communication that helps in developoing our leadership skills.
+            </div>
+            <div class="content-list__date">2nd September 2019 - 7th September 2019</div>
+          </div>
+
+          <div class="content-list">
+            <h1 class="content-list__title">
+              7th DST Inspire Internship Camp
+            </h1>
+            <h5 class="content-list__name">
+              <span
+                class="content-list__name-link"
+                >Panjab University, Chandigarh</span>
+              - Internship Camp
+            </h5>
+            <div class="content-list__about">
+              I was a part of 7th DST Inspire Internship Camp which was held in Panjab University, Chandigarh and I learnt a lot from various experiments which were taught to us there. It is a program under Department of Science and technology, Government of India.
+            </div>
+            <div class="content-list__date">27th March 2018 - 30th March 2018</div>
+          </div>
+        </section>
+
+        <!-- contact -->
+        <section class="contact" id="contact">
+          <div class="title">
+            <h1 class="heading-1 heading-1--light heading-1--contact">
+              Contact
+            </h1>
+            <hr />
+          </div>
+
+          <div class="contact-container inverted">
+            <p class="contact-container__text inverted">
+              <span class="contact-container__text--1">Let's Connect</span>
+              <span class="contact-container__text--2">Digitally</span>
+            </p>
+
+            <div class="contact-container__links inverted">
+              <a
+                target="_blank"
+                href="mailto:justcode31@gmail.com"
+                class="contact-container__links-item"
+                >Email</a
+              >
+              <a
+                target="_blank"
+                href="https://github.com/Chaitanya31612"
+                class="contact-container__links-item"
+                >GitHub</a
+              >
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/guptachaitanya/"
+                class="contact-container__links-item"
+                >LinkedIn</a
+              >
+              <a
+                target="_blank"
+                href="https://medium.com/@guptachaitanya31"
+                class="contact-container__links-item"
+                >Medium</a
+              >
+              <a
+                target="_blank"
+                href="https://twitter.com/Chaitan33456747"
+                class="contact-container__links-item"
+                >Twitter</a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
-</body>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
-<script src="./app.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./app.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
     AOS.init();
-</script>
+  </script>
 
-
-
-<!-- analytics -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8JFRFPTVM9"></script>
-<script>
+  <!-- analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-8JFRFPTVM9"
+  ></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'G-8JFRFPTVM9');
-</script>
+    gtag("config", "G-8JFRFPTVM9");
+  </script>
 
-<script src="https://cdn.jsdelivr.net/npm/darkreader/darkreader.min.js" crossorigin="anonymous"></script>
-<!-- <script type="text/javascript">
+  <script
+    src="https://cdn.jsdelivr.net/npm/darkreader/darkreader.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <!-- <script type="text/javascript">
         DarkReader.enable({
             brightness: 100,
             contrast: 90,
             sepia: 10
         });
     </script> -->
-
-
 </html>
