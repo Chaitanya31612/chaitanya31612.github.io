@@ -8,7 +8,7 @@
         font-size: .6em;
     }
     @include respond(tab-port) {
-        font-size: 5.5em;
+        font-size: 0.5.5em;
     }
     @include respond(phone) {
         
@@ -121,11 +121,11 @@
 
         @include respond(tab-land) {
             margin: 1em 2.5em 1em 0;
-            border: 4.1rem solid $color-grey-light;
+            border: 0.4.1rem solid $color-grey-light;
         }
         @include respond(tab-port) {
             margin: 1em 2.5em 1em 0;
-            border: 4.1rem solid $color-grey-light;
+            border: 0.4.1rem solid $color-grey-light;
         }
         @include respond(phone) {
             display: none;
@@ -144,7 +144,7 @@
 
         @include respond(tab-land) {
             margin: 1em 2.5em 1em 0;
-            border: 4.1rem solid $color-grey-light;
+            border: 0.4.1rem solid $color-grey-light;
         }
         @include respond(tab-port) {
             display: none;
