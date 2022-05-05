@@ -676,6 +676,9 @@ body {
   margin-bottom: 7rem; }
   .core-skills--project {
     grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr)); }
+    @media only screen and (max-width: 56.25em) {
+      .core-skills--project {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); } }
   .core-skills-item {
     background-color: #F6F6F6;
     box-shadow: -12px -12px 25px white, 12px 12px 25px rgba(165, 181, 248, 0.4);

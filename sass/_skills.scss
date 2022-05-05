@@ -40,6 +40,10 @@
 
   &--project {
     grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+
+    @include respond(tab-port) {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
   }
 
   &-item {
