@@ -29,6 +29,15 @@ $(function () {
   });
 });
 
+function imageChange() {
+  var image = document.getElementById("myImg");
+  if (image.src.match("./img/profile-noback.png")) {
+    image.src = "./img/profile-2.png";
+  } else {
+    image.src = "./img/profile-noback.png";
+  }
+}
+
 // if (!localStorage.getItem("theme")) {
 //   localStorage.setItem("theme", "light");
 // }
