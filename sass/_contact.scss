@@ -17,6 +17,11 @@
         font-size: 3.4rem;
     }
     
+    @include respond(phone) {
+        &__text {
+            display: none;
+        }
+    }
 
     &__text {
         text-align: center;

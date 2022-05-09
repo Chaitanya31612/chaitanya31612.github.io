@@ -21,6 +21,12 @@
     font-size: 7.2rem;
   }
 
+  &--achievements {
+    @include respond(phone) {
+      font-size: 5rem !important;
+    }
+  }
+
   @include respond(phone) {
     width: 100%;
     display: flex;
