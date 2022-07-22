@@ -627,9 +627,11 @@ body {
     justify-content: space-between;
     align-items: flex-start; }
   .about__image {
-    height: 40vh;
-    border: 5px #ccc dashed;
+    height: 50vh;
     margin-right: 10rem; }
+    @media only screen and (max-width: 68.7em) {
+      .about__image {
+        height: 40vh; } }
     @media only screen and (max-width: 56.25em) {
       .about__image {
         display: none; } }
