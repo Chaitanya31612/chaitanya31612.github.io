@@ -155,8 +155,7 @@ html {
       font-size: 75%; } }
 
 img {
-  user-drag: none;
-  -webkit-user-drag: none; }
+  pointer-events: none; }
 
 .loader {
   font-family: vivaldi, serif;
