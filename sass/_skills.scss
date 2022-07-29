@@ -48,12 +48,30 @@
 
   &-item {
     background-color: $bg-color-grey;
-    box-shadow: -12px -12px 25px rgba($color-white,1),
-        12px 12px 25px rgba($color-blue-light,0.4);
+    box-shadow: -12px -12px 25px rgba($color-white, 1),
+      12px 12px 25px rgba($color-blue-light, 0.4);
 
     transition: all 0.2s ease-in-out;
 
     padding: 4rem;
+
+    &--col {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &--row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row-reverse;
+
+      @include respond(tab-land) {
+        flex-direction: column;
+      }
+    }
 
     &:hover {
       transform: scale(1.01);
@@ -79,6 +97,29 @@
 
       &:hover {
         transform: scale(1.08);
+      }
+    }
+
+    &--image {
+      &--row {
+        width: 40%;
+
+        @include respond(tab-land) {
+          width: 100%;
+          margin-bottom: 5rem;
+        }
+      }
+
+      &--col {
+        width: 100%;
+        margin-bottom: 5rem;
+      }
+
+      // @include respond(tab-land) {
+      //   display: none;
+      // }
+      &-img {
+        width: 100%;
       }
     }
   }
