@@ -1,7 +1,7 @@
 .about {
   background-color: $bg-color-grey;
   padding: 2em;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 3em;
 
   &__container {
@@ -34,7 +34,7 @@
   }
 
   &__content {
-    height: 50vh !important;
+    // height: 50vh !important;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

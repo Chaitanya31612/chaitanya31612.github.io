@@ -621,7 +621,7 @@ body {
 .about {
   background-color: #f6f6f6;
   padding: 2em;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 3em; }
   .about__container {
     display: flex;
@@ -641,7 +641,6 @@ body {
       .about__image {
         display: none; } }
   .about__content {
-    height: 50vh !important;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
