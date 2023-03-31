@@ -627,6 +627,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; }
+  .about__text--underline {
+    transition: all 0.5s ease-in-out; }
+    .about__text--underline:hover {
+      text-decoration: underline; }
   .about__image {
     height: 50vh;
     margin-right: 10rem; }

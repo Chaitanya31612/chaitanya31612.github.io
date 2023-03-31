@@ -10,6 +10,15 @@
     align-items: flex-start;
   }
 
+  &__text {
+    &--underline {
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
   &__image {
     height: 50vh;
     // border: 5px #ccc dashed;
