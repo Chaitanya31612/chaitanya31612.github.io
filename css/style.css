@@ -326,12 +326,12 @@ body {
 
 .home {
   background-color: #f6f6f6;
-  font-size: .8em;
+  font-size: 0.8em;
   padding: 2em;
   height: 100vh; }
   @media only screen and (max-width: 68.7em) {
     .home {
-      font-size: .6em; } }
+      font-size: 0.6em; } }
   @media only screen and (max-width: 56.25em) {
     .home {
       font-size: 0.5 0.5em; } }
@@ -379,7 +379,7 @@ body {
   flex-direction: column;
   align-items: flex-end; }
   .home__nav > a {
-    transition: all .2s; }
+    transition: all 0.2s; }
     .home__nav > a:hover {
       transform: scale(1.03); }
   @media only screen and (max-width: 37.5em) {
@@ -387,9 +387,9 @@ body {
       display: none; } }
 
 .home__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  display: grid;
+  grid-template-columns: 5fr 2fr 1fr;
+  justify-content: end; }
   .home__top > h1:first-child {
     padding-left: 10rem; }
     @media only screen and (max-width: 37.5em) {
@@ -401,7 +401,8 @@ body {
 
 .toggle {
   display: flex;
-  align-self: flex-start; }
+  align-self: flex-start;
+  justify-self: flex-end; }
   @media only screen and (max-width: 37.5em) {
     .toggle {
       flex-direction: column; } }
@@ -472,7 +473,8 @@ body {
         height: 1rem; } }
 
 @keyframes MoveUpDown {
-  0%, 100% {
+  0%,
+  100% {
     bottom: 5px; }
   50% {
     bottom: 8px; } }
@@ -511,7 +513,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .5rem; }
+  padding: 0.5rem; }
   .nav__title {
     font-family: vivaldi, serif;
     font-size: 5rem;
@@ -550,7 +552,7 @@ body {
     .nav-mob {
       display: contents; } }
 
-/* 
+/*
 ------------------------------------
      HAMBURGER ANIMATION
 ------------------------------------
@@ -565,25 +567,27 @@ body {
   cursor: pointer;
   position: relative; }
 
-.first, .second, .third {
+.first,
+.second,
+.third {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.85);
-  height: .45em;
+  height: 0.45em;
   width: 100%;
   float: left;
   border-radius: 2px;
-  transition: all .35s ease-in-out; }
+  transition: all 0.35s ease-in-out; }
 
 .first {
   top: 0px; }
 
 .is-active .first {
-  transform-origin: .167em .33em;
+  transform-origin: 0.167em 0.33em;
   transform: rotate(45deg) translate(0.167em, -0.25em); }
 
 .second {
   top: 50%;
-  margin-top: -.25em; }
+  margin-top: -0.25em; }
 
 .is-active .second {
   opacity: 0;
@@ -591,7 +595,7 @@ body {
 
 .third {
   bottom: 0px;
-  transform-origin: .25em -0.33em; }
+  transform-origin: 0.25em -0.33em; }
 
 .is-active .third {
   transform: rotate(-45deg) translate(-0.167em, 0.083em); }
@@ -613,7 +617,7 @@ body {
   width: 60px;
   height: 60px;
   cursor: pointer;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border-color: white;
   border: none;
   outline: none; }

@@ -1,196 +1,199 @@
 .home {
-    background-color: $bg-color-grey;
-    font-size: .8em;
-    padding: 2em;
-    height: 100vh;
+  background-color: $bg-color-grey;
+  font-size: 0.8em;
+  padding: 2em;
+  height: 100vh;
 
-    @include respond(tab-land) {
-        font-size: .6em;
-    }
-    @include respond(tab-port) {
-        font-size: 0.5.5em;
-    }
-    @include respond(phone) {
-        
-    }
+  @include respond(tab-land) {
+    font-size: 0.6em;
+  }
+  @include respond(tab-port) {
+    font-size: 0.5.5em;
+  }
+  @include respond(phone) {
+  }
 }
 
 .home__heading {
-    display: grid;
-    grid-template-columns: 5fr 2fr 1fr;
-    justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 5fr 2fr 1fr;
+  justify-content: space-evenly;
+
+  @include respond(tab-port-2) {
+    grid-template-columns: 5fr 2fr;
+    justify-content: space-around;
+  }
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+  }
+
+  &__main {
+    // line-height: 7;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20rem;
+    justify-content: center;
+    align-items: center;
 
     @include respond(tab-port-2) {
-        grid-template-columns: 5fr 2fr;
-        justify-content: space-around;
+      padding-right: 0;
+      font-size: 1.2em;
     }
-    @include respond(phone) {
-        grid-template-columns: 1fr;
-        justify-content: space-around;
+  }
+
+  &__name {
+    font-family: vivaldi, serif;
+    font-size: 14em;
+    text-align: center;
+  }
+
+  &__svg {
+    @include respond(tab-land) {
+      width: 30rem;
+      height: 30rem;
     }
-
-    &__main {
-        // line-height: 7;
-        display: flex;
-        flex-direction: column;
-        padding-right: 20rem;
-        justify-content: center;
-        align-items: center;
-
-        @include respond(tab-port-2) {
-            padding-right: 0;
-            font-size: 1.2em;
-        }
+    @include respond(tab-port) {
+      width: 25rem;
+      height: 25rem;
     }
-
-    &__name {
-        font-family: vivaldi, serif;
-        font-size: 14em;
-        text-align: center;
-
+    @include respond(tab-port-2) {
+      display: none;
     }
-
-    &__svg {
-
-        @include respond(tab-land) {
-            width: 30rem;
-            height: 30rem;
-        }
-        @include respond(tab-port) {
-            width: 25rem;
-            height: 25rem;
-        }
-        @include respond(tab-port-2) {
-            display: none;
-        }
-    }
+  }
 }
 
 .home__nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 
-    // & > div:hover {
-    //     transform: scale(1.03);
-    // }
-    & > a {
-        transition: all .2s;
-        &:hover {
-            transform: scale(1.03);
-        }
+  // & > div:hover {
+  //     transform: scale(1.03);
+  // }
+  & > a {
+    transition: all 0.2s;
+    &:hover {
+      transform: scale(1.03);
     }
-    
-    @include respond(phone) {
-        display: none;
-    }
+  }
+
+  @include respond(phone) {
+    display: none;
+  }
 }
 
 .home__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
 
-    & > h1:first-child {
-        padding-left: 10rem;
-        @include respond(phone) {
-            padding-left: 0;
-            justify-self: center;
-            font-size: 10em;
-            margin-bottom: 3rem;
-        }
+  display: grid;
+  grid-template-columns: 5fr 2fr 1fr;
+  justify-content: end;
+
+  & > h1:first-child {
+    padding-left: 10rem;
+    @include respond(phone) {
+      padding-left: 0;
+      justify-self: center;
+      font-size: 10em;
+      margin-bottom: 3rem;
     }
+  }
 }
 
 .toggle {
-    display: flex;
-    align-self: flex-start;
+  display: flex;
+  align-self: flex-start;
+  justify-self: flex-end;
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
+  &--dark {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    box-sizing: none;
+    margin: 1em 1.5em 1em 0;
+    border: 0.6rem solid $color-grey-light;
+    background-color: $color-black;
+    cursor: pointer;
+
+    @include respond(tab-land) {
+      margin: 1em 2.5em 1em 0;
+      border: 0.4.1rem solid $color-grey-light;
+    }
+    @include respond(tab-port) {
+      margin: 1em 2.5em 1em 0;
+      border: 0.4.1rem solid $color-grey-light;
+    }
     @include respond(phone) {
-        flex-direction: column;
+      display: none;
     }
-    
-    &--dark {
-        width: 4em;
-        height: 4em;
-        border-radius: 50%;
-        box-sizing: none;
-        margin: 1em 1.5em 1em 0;
-        border: .6rem solid $color-grey-light;
-        background-color: $color-black;
-        cursor: pointer;
+  }
 
-        @include respond(tab-land) {
-            margin: 1em 2.5em 1em 0;
-            border: 0.4.1rem solid $color-grey-light;
-        }
-        @include respond(tab-port) {
-            margin: 1em 2.5em 1em 0;
-            border: 0.4.1rem solid $color-grey-light;
-        }
-        @include respond(phone) {
-            display: none;
-        }
+  &--light {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    box-sizing: none;
+    margin: 1em 3.5em 1em 0;
+    border: 0.6rem solid $color-grey-light;
+    background-color: $color-white;
+    cursor: pointer;
+
+    @include respond(tab-land) {
+      margin: 1em 2.5em 1em 0;
+      border: 0.4.1rem solid $color-grey-light;
     }
-
-    &--light {
-        width: 4em;
-        height: 4em;
-        border-radius: 50%;
-        box-sizing: none;
-        margin: 1em 3.5em 1em 0;
-        border: .6rem solid $color-grey-light;
-        background-color: $color-white;
-        cursor: pointer;
-
-        @include respond(tab-land) {
-            margin: 1em 2.5em 1em 0;
-            border: 0.4.1rem solid $color-grey-light;
-        }
-        @include respond(tab-port) {
-            display: none;
-            // margin: 1em 2.5em 1em 0;
-            // border: .4.1rem solid $color-grey-light;
-        }
-        @include respond(phone) {
-            display: none;
-        }
+    @include respond(tab-port) {
+      display: none;
+      // margin: 1em 2.5em 1em 0;
+      // border: .4.1rem solid $color-grey-light;
     }
+    @include respond(phone) {
+      display: none;
+    }
+  }
 }
 
 .learn-more {
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 
-    text-decoration: none;
-    color: $color-grey;
-    animation: MoveUpDown 1s ease-in-out infinite;
+  text-decoration: none;
+  color: $color-grey;
+  animation: MoveUpDown 1s ease-in-out infinite;
 
-    @include respond(tab-port) {
-        display: none;
-    }
-    &__text {
-        margin-bottom: 6px;
-        font-size: 1.7em;
-    }
+  @include respond(tab-port) {
+    display: none;
+  }
+  &__text {
+    margin-bottom: 6px;
+    font-size: 1.7em;
+  }
 
-    &__svg {
-        width: 2.5rem;
-        height: 1.7rem;
-        @include respond(tab-land) {
-            width: 2rem;
-            height: 1rem;
-        }
+  &__svg {
+    width: 2.5rem;
+    height: 1.7rem;
+    @include respond(tab-land) {
+      width: 2rem;
+      height: 1rem;
     }
+  }
 }
 
 @keyframes MoveUpDown {
-  0%, 100% {
+  0%,
+  100% {
     bottom: 5px;
   }
   50% {
@@ -200,114 +203,109 @@
 }
 
 .know-more {
-    display: none;
+  display: none;
 
-    @include respond(tab-port) {
-        position: absolute;
-        bottom: 5rem;
-        left: 50%;
-        transform: translate(-50%, 0);
+  @include respond(tab-port) {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
 
-        display: block;
-        margin: auto;
-        width: fit-content;
-        
-        
-    }
+    display: block;
+    margin: auto;
+    width: fit-content;
+  }
 }
-
-
 
 // nav
 
 .not-active {
-    display: none;
+  display: none;
 }
 
 .visible {
-    visibility: visible !important;
-    display: contents !important;
-    & > a {
-        font-size: 1.8rem !important;
-    }
-    & > a:first-child {
-        margin-left: 1rem;
-    }
+  visibility: visible !important;
+  display: contents !important;
+  & > a {
+    font-size: 1.8rem !important;
+  }
+  & > a:first-child {
+    margin-left: 1rem;
+  }
 }
 
 .nav {
-    position: fixed;
-    z-index: 999999;
-    background-color: $color-white;
-    top: -70px;
-    width: 100%;
-    display: block;
-    transition: top 0.3s;
+  position: fixed;
+  z-index: 999999;
+  background-color: $color-white;
+  top: -70px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+
+  &__title {
+    font-family: vivaldi, serif;
+    font-size: 5rem;
+    letter-spacing: 2px;
+    margin-left: 2rem;
+    text-decoration: none;
+    color: $color-black;
+    font-weight: bolder;
+    // transition: all .2s;
+  }
+
+  &__links {
+    width: 60%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .5rem;
+    justify-content: space-evenly;
 
-    &__title {
-        font-family: vivaldi, serif;
-        font-size: 5rem;
-        letter-spacing: 2px;
-        margin-left: 2rem;
-        text-decoration: none;
+    .hide {
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+
+    &-item {
+      text-decoration: none;
+      color: $color-grey;
+      font-size: 2rem;
+
+      &:hover {
         color: $color-black;
-        font-weight: bolder;
-        // transition: all .2s;
+        font-weight: 800;
+      }
     }
 
-    &__links {
-        width: 60%;
-        display: flex;
-        justify-content: space-evenly;
-
-        .hide {
-            @include respond(tab-port) {
-                display: none;
-            }
-        }
-
-        &-item {
-            text-decoration: none;
-            color: $color-grey;
-            font-size: 2rem;
-
-            &:hover {
-                color: $color-black;
-                font-weight: 800;
-            }
-        }
-
-        @include respond(tab-port-2) {
-            width: 70%;
-            visibility: hidden;
-        }
-        @include respond(phone) {
-            width: 100%;
-            visibility: hidden;
-            display: none;
-        }
+    @include respond(tab-port-2) {
+      width: 70%;
+      visibility: hidden;
     }
+    @include respond(phone) {
+      width: 100%;
+      visibility: hidden;
+      display: none;
+    }
+  }
 }
 
 .nav-mob {
-    display: none;
+  display: none;
 
-    @include respond(tab-port-2) {
-        display: contents;
-    }
+  @include respond(tab-port-2) {
+    display: contents;
+  }
 }
 
-
-/* 
+/*
 ------------------------------------
      HAMBURGER ANIMATION
 ------------------------------------
 */
-.hamburger_wrapper{
+.hamburger_wrapper {
   float: right;
 }
 
@@ -319,15 +317,16 @@
   position: relative;
 }
 
-.first, .second, .third {
+.first,
+.second,
+.third {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.85);
-  height: .45em;
+  height: 0.45em;
   width: 100%;
   float: left;
   border-radius: 2px;
-  transition: all .35s ease-in-out;
-  
+  transition: all 0.35s ease-in-out;
 }
 
 .first {
@@ -335,41 +334,40 @@
 }
 
 .is-active .first {
-  transform-origin: .167em .33em;
+  transform-origin: 0.167em 0.33em;
   transform: rotate(45deg) translate(0.167em, -0.25em);
 }
 
 .second {
   top: 50%;
-  margin-top: -.25em;
+  margin-top: -0.25em;
 }
 
 .is-active .second {
   opacity: 0;
-  transform: translateX(8em)
+  transform: translateX(8em);
 }
 
 .third {
   bottom: 0px;
-  transform-origin: .25em -0.33em;
+  transform-origin: 0.25em -0.33em;
 }
 
 .is-active .third {
   transform: rotate(-45deg) translate(-0.167em, 0.083em);
 }
 
-
-.navbar-brand{
+.navbar-brand {
   font-size: 30px;
   font-weight: bold;
 }
-.navbar{
-  color:#000000;
+.navbar {
+  color: #000000;
   background-color: #fff;
 }
 
 /**Navbar burger animations**/
-.navbar-toggler{
+.navbar-toggler {
   position: relative;
   display: flex;
   justify-content: center;
@@ -377,7 +375,7 @@
   width: 60px;
   height: 60px;
   cursor: pointer;
-  transition: all .2s ease-in-out; 
+  transition: all 0.2s ease-in-out;
   border-color: white;
   border: none;
   outline: none;
