@@ -506,7 +506,7 @@ body {
   position: fixed;
   z-index: 999999;
   background-color: #fff;
-  top: -70px;
+  top: -500px;
   width: 100%;
   display: block;
   transition: top 0.3s;
