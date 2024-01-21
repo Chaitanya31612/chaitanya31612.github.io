@@ -18,14 +18,17 @@
   display: grid;
   grid-template-columns: 5fr 2fr 1fr;
   justify-content: space-evenly;
+  margin-top: 1rem;
 
   @include respond(tab-port-2) {
     grid-template-columns: 5fr 2fr;
     justify-content: space-around;
+    margin-top: 7rem;
   }
   @include respond(phone) {
     grid-template-columns: 1fr;
     justify-content: space-around;
+    margin-top: 7rem;
   }
 
   &__main {
@@ -379,4 +382,18 @@
   border-color: white;
   border: none;
   outline: none;
+}
+
+.hide_sm {
+  @include respond(tab-port-2) {
+    color: red;
+    display: none;
+  }
+}
+
+.show_sm {
+  display: none;
+  @include respond(tab-port-2) {
+    display: block;
+  }
 }
