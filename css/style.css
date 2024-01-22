@@ -345,12 +345,12 @@ body {
     .home__heading {
       grid-template-columns: 5fr 2fr;
       justify-content: space-around;
-      margin-top: 7rem; } }
+      margin-top: 6rem; } }
   @media only screen and (max-width: 37.5em) {
     .home__heading {
       grid-template-columns: 1fr;
       justify-content: space-around;
-      margin-top: 7rem; } }
+      margin-top: 6rem; } }
   .home__heading__main {
     display: flex;
     flex-direction: column;

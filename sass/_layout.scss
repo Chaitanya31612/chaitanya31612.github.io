@@ -23,12 +23,12 @@
   @include respond(tab-port-2) {
     grid-template-columns: 5fr 2fr;
     justify-content: space-around;
-    margin-top: 7rem;
+    margin-top: 6rem;
   }
   @include respond(phone) {
     grid-template-columns: 1fr;
     justify-content: space-around;
-    margin-top: 7rem;
+    margin-top: 6rem;
   }
 
   &__main {
