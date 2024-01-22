@@ -2,7 +2,11 @@
   background-color: $bg-color-grey;
   padding: 2em;
   min-height: 100vh;
-  padding-top: 3em;
+  padding-top: 5em;
+
+  @include respond(tab-port) {
+    padding-top: 0;
+  }
 
   &__container {
     display: flex;
@@ -14,7 +18,9 @@
     &--underline {
       transition: all 0.5s ease-in-out;
       &:hover {
-        text-decoration: underline;
+        // text-decoration: underline;
+        border: 1px solid yellow;
+        background-color: yellow;
       }
     }
   }

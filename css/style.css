@@ -640,7 +640,10 @@ body {
   background-color: #f6f6f6;
   padding: 2em;
   min-height: 100vh;
-  padding-top: 3em; }
+  padding-top: 5em; }
+  @media only screen and (max-width: 56.25em) {
+    .about {
+      padding-top: 0; } }
   .about__container {
     display: flex;
     justify-content: space-between;
@@ -648,7 +651,8 @@ body {
   .about__text--underline {
     transition: all 0.5s ease-in-out; }
     .about__text--underline:hover {
-      text-decoration: underline; }
+      border: 1px solid yellow;
+      background-color: yellow; }
   .about__image {
     height: 50vh;
     margin-right: 10rem; }
